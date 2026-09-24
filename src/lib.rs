@@ -1,0 +1,33 @@
+#![no_std]
+
+#[cfg(any(test, feature = "testutils"))]
+extern crate std;
+
+mod contract;
+mod errors;
+mod events;
+mod storage;
+
+pub use contract::{
+    BlendVoteContract, BlendVoteContractClient, Config, OptionResult, VoteRecord, VoteResults,
+};
+pub use errors::VoteError;
+
+pub const CANONICAL_ELIGIBLE_HOLDERS: u32 = 434;
+pub const CANONICAL_TOTAL_ELIGIBLE_SHARES: i128 = 146_100_619_813_817;
+pub const CANONICAL_SNAPSHOT_SHA256: [u8; 32] = [
+    0x30, 0xfb, 0xbb, 0x6c, 0x62, 0xc8, 0x81, 0x2a, 0x94, 0xcf, 0xb0, 0x2f, 0x1c, 0x9d, 0x52, 0x82,
+    0x35, 0xa2, 0x8d, 0xcd, 0xdf, 0xb4, 0x5f, 0xa7, 0xf5, 0x53, 0x5e, 0x39, 0xfd, 0x9a, 0x4c, 0xd3,
+];
+pub const CANONICAL_ALLOCATION_DIGEST: [u8; 32] = [
+    0x16, 0xef, 0x4a, 0x50, 0xd5, 0x89, 0x9f, 0xb5, 0xec, 0xc1, 0x8f, 0x72, 0xf3, 0x8b, 0x2c, 0xb9,
+    0x03, 0xd0, 0x09, 0xf9, 0xbf, 0x11, 0x69, 0x04, 0xc4, 0x65, 0xc7, 0x6b, 0x52, 0xfe, 0xce, 0x06,
+];
+pub const SNAPSHOT_DIGEST_DOMAIN: &[u8] = b"blend-vote-snapshot-v1";
+pub const MAX_OPTIONS: u32 = 16;
+pub const MAX_OPTION_BYTES: u32 = 256;
+pub const MAX_PROPOSAL_BYTES: u32 = 2_048;
+pub const MAX_VOTER_PAGE: u32 = 100;
+
+/// Percentages use seven decimal places: 1_000_000_000 means 100.0000000%.
+pub const PERCENT_7DP_SCALE: i128 = 1_000_000_000;

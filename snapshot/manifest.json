@@ -1,0 +1,2631 @@
+{
+  "schema_version": 1,
+  "source_csv": "snapshot/comet_cpal_flattened_ownership_before_41c898a1.csv",
+  "source_sha256": "30fbbb6c62c8812a94cfb02f1c9d528235a28dcddfb45fa7f5535e39fd9a4cd3",
+  "allocation_digest": "16ef4a50d5899fb5ecc18f72f38b2cb903d009f9bf116904c465c76b52fece06",
+  "allocation_digest_encoding": "sha256(utf8('blend-vote-snapshot-v1') || each positive row in CSV order: 56-byte ASCII address || signed i128 big-endian raw shares)",
+  "asset": "BLND:USDC Comet V1 LP share",
+  "network": "Stellar mainnet",
+  "decimals": 7,
+  "source_row_count": 435,
+  "eligible_holder_count": 434,
+  "eligible_account_count": 423,
+  "eligible_contract_count": 11,
+  "excluded_zero_weight_holder_count": 1,
+  "total_eligible_shares_raw": "146100619813817",
+  "total_eligible_shares": "14610061.9813817",
+  "eligible_voters": [
+    {
+      "rank": 1,
+      "address": "GCA34HBKNLWN3AOXWBRW5Y3HSGHCWF3UDBRJ5YHGU6HWGJZEPO2NSXI3",
+      "address_type": "account",
+      "shares_raw": "17948394382594"
+    },
+    {
+      "rank": 2,
+      "address": "GDTZSZTGBXPBV4GC7AUYNWUWCAT56CNYSKR7IOIZYNAOPIWCWWHMTIPS",
+      "address_type": "account",
+      "shares_raw": "11308341118748"
+    },
+    {
+      "rank": 3,
+      "address": "CBZUCS36UVRY4ZAHJIKUOGFZWOOK6SPZOIZIA25IOP47P5W6BMVUAEM5",
+      "address_type": "contract",
+      "shares_raw": "8196171115201"
+    },
+    {
+      "rank": 4,
+      "address": "GATVKWD4ZEZFG5JLZQIIZ3GSTZ6DDHGOMVXCIGAHXEFEX76NDDMOVBJJ",
+      "address_type": "account",
+      "shares_raw": "6818755053970"
+    },
+    {
+      "rank": 5,
+      "address": "GCQQRVD75YXVFWTURGHNQJY2G3QVNUYYAUGNRAHVRGTVXL47JP5MH6SU",
+      "address_type": "account",
+      "shares_raw": "6676193619882"
+    },
+    {
+      "rank": 6,
+      "address": "GCYVR6JS6DLRAFF2HEC6LN7J6H6JS2VMERCTGV64RESTZAJMOHB5RHU7",
+      "address_type": "account",
+      "shares_raw": "5520075498051"
+    },
+    {
+      "rank": 7,
+      "address": "GDCY2PONYVU46RDOWURDYTT7K46EWI2LDZO7NPK5MSB7WSRXAI5IOB4C",
+      "address_type": "account",
+      "shares_raw": "5396172819179"
+    },
+    {
+      "rank": 8,
+      "address": "GBUNDGF4GERH44WAOSJFBDZG5AFFHSZBAZVTFNN4SOE63BGDDDYQAV2G",
+      "address_type": "account",
+      "shares_raw": "5017798714694"
+    },
+    {
+      "rank": 9,
+      "address": "GAGNU4JUDML3BYEAH5MOKWDNYSIMWNKP2WZX5XM4WZZ4H7Y4RPGYBLOX",
+      "address_type": "account",
+      "shares_raw": "4356029891165"
+    },
+    {
+      "rank": 10,
+      "address": "GD5ZJB3TDU6JIBIEWQNCDN2KEOBI5XX2G5RZUBM4SL7KWCCIO3FDIFTF",
+      "address_type": "account",
+      "shares_raw": "3556979576472"
+    },
+    {
+      "rank": 11,
+      "address": "CAO3AGAMZVRMHITL36EJ2VZQWKYRPWMQAPDQD5YEOF3GIF7T44U4JAL3",
+      "address_type": "contract",
+      "shares_raw": "3540158177352"
+    },
+    {
+      "rank": 12,
+      "address": "GB5F2BYPFRSCMQPPR226EDCMZDVAVYNN5JIEDLPIN2AV3QMYKUFNXHNB",
+      "address_type": "account",
+      "shares_raw": "2850454295750"
+    },
+    {
+      "rank": 13,
+      "address": "CDJDJJYJU5DDX267RYB3RWYS6FFJXAXQABV2YNXJ3RGFEIR3X7B43UPQ",
+      "address_type": "contract",
+      "shares_raw": "2636075084774"
+    },
+    {
+      "rank": 14,
+      "address": "GCWAUSZKOQYTRTNVILVWSZI53ZGHWZT62LXFHGXZ5PKKYA2RLABJSK76",
+      "address_type": "account",
+      "shares_raw": "2509364001982"
+    },
+    {
+      "rank": 15,
+      "address": "GAZDDN2QK5EQZY2BCO4GLE36IHJJCQ54EQ5HP5P3NI2K6WOHGGHWH5QJ",
+      "address_type": "account",
+      "shares_raw": "2351249319826"
+    },
+    {
+      "rank": 16,
+      "address": "GA7Y6K6RXCQPZHZJ2RYXJTWHD236WFWOSVCADMXRABHF5K4TFEOGDM7N",
+      "address_type": "account",
+      "shares_raw": "2165414457662"
+    },
+    {
+      "rank": 17,
+      "address": "GCILPNV26SBEGMUWKCKM7TQOJXOHU23JMFWBAEGEFGOATPERAHLYHUS2",
+      "address_type": "account",
+      "shares_raw": "2032818734223"
+    },
+    {
+      "rank": 18,
+      "address": "GCFJLCJ4HEB5OQRDSIEWQKAL7OBONG4SEWNEVW34SJQGCQ7ALFGQ22FV",
+      "address_type": "account",
+      "shares_raw": "1987897794807"
+    },
+    {
+      "rank": 19,
+      "address": "GAEBP4VL2XZTJ46IBYTZ5TTWDYAEEXMPNB45W6GGEUSIYWDFGWM3IHTQ",
+      "address_type": "account",
+      "shares_raw": "1976370073125"
+    },
+    {
+      "rank": 20,
+      "address": "GC2LIJHKPVSTUILOTPGAEBEGIS4NCMRQEOP3Z45CFYT7NTJCOJDTTP5X",
+      "address_type": "account",
+      "shares_raw": "1952187508038"
+    },
+    {
+      "rank": 21,
+      "address": "GC2CNV3ZP2ARORYJMPFYO56LJVVMN2QLLVCICQD24B3QMDZ5FQZVJOM7",
+      "address_type": "account",
+      "shares_raw": "1867923825632"
+    },
+    {
+      "rank": 22,
+      "address": "GDMCUWYGHGOM2AIWVFJVW6PW3Y77CL5BSIF67BKHOMDEZMCXHFQW7VTK",
+      "address_type": "account",
+      "shares_raw": "1849023561571"
+    },
+    {
+      "rank": 23,
+      "address": "GCDSXXUQALVLEOJZWHPQQM2LKVFBDJGMUJXW46C2BGO5QCSI25LYC3YG",
+      "address_type": "account",
+      "shares_raw": "1814812996544"
+    },
+    {
+      "rank": 24,
+      "address": "GAFJVX6JYGN76D6IX6FBYJDJMWBGFIV2NZROVCJN4PZP3HDGRWSZXAKV",
+      "address_type": "account",
+      "shares_raw": "1813957326726"
+    },
+    {
+      "rank": 25,
+      "address": "GA5HXKKBJUDUBJBGLWASUN2RHW6OM6WKESDREEQFCT3Q2PS57K44IF6U",
+      "address_type": "account",
+      "shares_raw": "1769171574078"
+    },
+    {
+      "rank": 26,
+      "address": "GDIQFXBZAS4TA5Z7JSCOLGSDFMK4UF4SPYER5IVPNRPUYFQ6U4GKVZ7P",
+      "address_type": "account",
+      "shares_raw": "1745396167273"
+    },
+    {
+      "rank": 27,
+      "address": "GDSANA2XZQJLPEWXKAF5XYOFYNJXCDQNFUJMW3EVGASIAXALG65YIHXC",
+      "address_type": "account",
+      "shares_raw": "1582693514328"
+    },
+    {
+      "rank": 28,
+      "address": "CCJGQ7FUZ7KTRRBMW3KJ2IUNKN2TTJ6HKEKUZVORQBALMJNTUT6XVYVH",
+      "address_type": "contract",
+      "shares_raw": "1499991252928"
+    },
+    {
+      "rank": 29,
+      "address": "GBUAECU5BYGLAJWQYOPYV3ZMFNUHD6XLARQBELQAZBAXBHPSKEOGZFZD",
+      "address_type": "account",
+      "shares_raw": "1464137559055"
+    },
+    {
+      "rank": 30,
+      "address": "GAYRDQ2S74LVNJVVCYNCE45K5SMLUHSOGQF6LH3JUH3IVEUBINYPQQJ4",
+      "address_type": "account",
+      "shares_raw": "1418088036137"
+    },
+    {
+      "rank": 31,
+      "address": "GBTTT6GJABS26S7R6LCO6ASSUNZCST5IT7C54JDEJ2RSV2BUHU4H6VS5",
+      "address_type": "account",
+      "shares_raw": "1356591152344"
+    },
+    {
+      "rank": 32,
+      "address": "GA4L76V5Z6YHB7YW6NDQ5GOZZTJNSG6RHTWDFPGEP3MGZD47VWGXLOOP",
+      "address_type": "account",
+      "shares_raw": "1354139126987"
+    },
+    {
+      "rank": 33,
+      "address": "GBPPGSHXAVDCN4OU45QIBIFIMA4VWKI3RY4X3Z7424KXKYIQBPCJR7CI",
+      "address_type": "account",
+      "shares_raw": "1252135593124"
+    },
+    {
+      "rank": 34,
+      "address": "GCMM7MEPM7HK7XYBWOVYJSQAEG2TAQ6H6HYZBNG4EZE3IXX4XO6H57DO",
+      "address_type": "account",
+      "shares_raw": "1197606985663"
+    },
+    {
+      "rank": 35,
+      "address": "GDXBTISCOXC2SOIV24MGTXFQLZ2LOE3ZKYWTHGYDYCJRXF3T47BMFILO",
+      "address_type": "account",
+      "shares_raw": "1147250716025"
+    },
+    {
+      "rank": 36,
+      "address": "GCRU3HYKAAN4PF4DHMSRBX7AHNLZSR3WSOANTZAYZRGJXUNM6ZEHBCXM",
+      "address_type": "account",
+      "shares_raw": "1138135171847"
+    },
+    {
+      "rank": 37,
+      "address": "GDDIQ77QRV2LAK3I2K6SVB7VGTDOT4WRTUTXOX2TAAS2WVUFDTHILJTD",
+      "address_type": "account",
+      "shares_raw": "1047909269793"
+    },
+    {
+      "rank": 38,
+      "address": "CD7UCK6QPQVXGHI36HEVNAJXRO6GPFWSVBJDXK37ENL3DZ2NKEX5WM4S",
+      "address_type": "contract",
+      "shares_raw": "1000680000001"
+    },
+    {
+      "rank": 39,
+      "address": "GCPIKUGS2RNSH6HAKUSIDBAVHC62QMDFUNXUTET4Q3YDDCUO5B3F7D45",
+      "address_type": "account",
+      "shares_raw": "979560052498"
+    },
+    {
+      "rank": 40,
+      "address": "GDLI5PY2ONAYPWCRBM3GRLIXQ66P2V57HJXN77WSEZSLSKOUOHEMCOPK",
+      "address_type": "account",
+      "shares_raw": "973930105376"
+    },
+    {
+      "rank": 41,
+      "address": "GAVR4ZXRXGNRCPGEIKEG6CRSMNTNDCVDJELXFMU5TQ6YONPOJIP7O6MU",
+      "address_type": "account",
+      "shares_raw": "957250594732"
+    },
+    {
+      "rank": 42,
+      "address": "GBPFUT76CUQTILFAOSTQ2PRFHIVQDG4PJESPM6DSFBZF56X5E5ZRYDAD",
+      "address_type": "account",
+      "shares_raw": "924029328826"
+    },
+    {
+      "rank": 43,
+      "address": "GDG7PTG6J62HPE74BVWNSQWTPSZKBXN6RRUKJRDEEXPSC2OTXXVLIANW",
+      "address_type": "account",
+      "shares_raw": "918814379136"
+    },
+    {
+      "rank": 44,
+      "address": "GAXOCT452OQUY6KFQOIP4RCHOPZGLLRGRFEDAZMK7A2SSY7REWF7QX2C",
+      "address_type": "account",
+      "shares_raw": "763017382421"
+    },
+    {
+      "rank": 45,
+      "address": "GCKXRM7YSVMBVGW6OUYC2TK25CEYTDCH4QOOXXOJOKVLQ2DBDFUAJJ2F",
+      "address_type": "account",
+      "shares_raw": "711480018403"
+    },
+    {
+      "rank": 46,
+      "address": "GBZOB7C7TJMIIQ2GCJPIFIZORNN5PV25I3AQIMFNO2RRS5NVG3CFP5UF",
+      "address_type": "account",
+      "shares_raw": "660745537164"
+    },
+    {
+      "rank": 47,
+      "address": "GDVSMBB42NDHSCP4MZAEX4G7QWUPR6ZE2KVW23ZY6HNK3SL5M2CYANSA",
+      "address_type": "account",
+      "shares_raw": "628596142678"
+    },
+    {
+      "rank": 48,
+      "address": "GBIIUZH63Z262QXGKJIP3ZU5DS7L4L2TBTYGPXRIGQXZAF25A72YNULL",
+      "address_type": "account",
+      "shares_raw": "564731769971"
+    },
+    {
+      "rank": 49,
+      "address": "GDEUXEYTXHTXS666SIO7MNCPTPTC2PQPIVZQCG55BPKMRHMXAW6OADA6",
+      "address_type": "account",
+      "shares_raw": "537866893980"
+    },
+    {
+      "rank": 50,
+      "address": "GC4V7DAIR5QQ6OMQV2TNC22I54PNCKLXA6WW2VK4NFPR6H2XIGNF6MUZ",
+      "address_type": "account",
+      "shares_raw": "495433092042"
+    },
+    {
+      "rank": 51,
+      "address": "GDGWSRSHQ6HQ2OMJHZWCN26NW7RWCKJUYFQFEZTUNIDI2PCBWZS35COM",
+      "address_type": "account",
+      "shares_raw": "492994118063"
+    },
+    {
+      "rank": 52,
+      "address": "GCKOP53YBVKUNFWSSHMGMYBSCSJGPFAWRWTELERE6S3WVTW44MJ7ARQ3",
+      "address_type": "account",
+      "shares_raw": "430192147988"
+    },
+    {
+      "rank": 53,
+      "address": "GBSDNLUEPQEM7YUCJPYND3HI7DUFTKNWVUCHLO43K6YUOPGY2HM6GIWU",
+      "address_type": "account",
+      "shares_raw": "428919106517"
+    },
+    {
+      "rank": 54,
+      "address": "GAC7ZDMD54QZV5FCK3MVLQWX3ITMEDDJOZMPVQQRWLFA2CERYAMS2QCX",
+      "address_type": "account",
+      "shares_raw": "428654734071"
+    },
+    {
+      "rank": 55,
+      "address": "GBXQRU73P63NSSEKRQRYQTSQ6SDUQY7LM6JEPD56WDQLSBT2FCDIQ6H7",
+      "address_type": "account",
+      "shares_raw": "396575204479"
+    },
+    {
+      "rank": 56,
+      "address": "GCOTFUPCJTKRQBPQC5ZHWAPE4JWOFD5A5436QOO63KCF6YAJITEZD7SS",
+      "address_type": "account",
+      "shares_raw": "354613118733"
+    },
+    {
+      "rank": 57,
+      "address": "GDDRDRB25ERBKFF3UGCWNYHVZLRP5KXUBEICJZ2RN3EN7RL77ZOWP5NX",
+      "address_type": "account",
+      "shares_raw": "350580205654"
+    },
+    {
+      "rank": 58,
+      "address": "GDVPI24BHUIQ5QNIYFRIV4TZL6UUDIXQWXAZEZQUFIDULC6EVN6DKNDL",
+      "address_type": "account",
+      "shares_raw": "320876893731"
+    },
+    {
+      "rank": 59,
+      "address": "GDSEX2EEH6TRBY5MNEKHI3KDLUUQYR7YOUP5TDCASWYZDZ747Q6KGUS6",
+      "address_type": "account",
+      "shares_raw": "297750816358"
+    },
+    {
+      "rank": 60,
+      "address": "GBNQH57WH6MJHS2CTIZ2OWTAID7G6Q5GAUMSPHJF3443PWOINZJXZOOE",
+      "address_type": "account",
+      "shares_raw": "289858697193"
+    },
+    {
+      "rank": 61,
+      "address": "GDEUQWHIBXZTP6GJRHOWTZ5VMTSLFKLHYNFSGAH6KUJYPKIG5ZQVB53V",
+      "address_type": "account",
+      "shares_raw": "286885453966"
+    },
+    {
+      "rank": 62,
+      "address": "GDGW4YGH4IGTMDNJRZTXNKC72ESMIKTZN4TWUVJF5KURFRQJKD6KSTAR",
+      "address_type": "account",
+      "shares_raw": "258334542691"
+    },
+    {
+      "rank": 63,
+      "address": "GCIMUKEGLOTE3QNEHYXH4FAN3WNXUGLKGHXXQUSD3ZWQHXDZUBI4XLTB",
+      "address_type": "account",
+      "shares_raw": "255367135429"
+    },
+    {
+      "rank": 64,
+      "address": "GA2GD7P5MQU2FLF5NP26UJ3KAY5XX42OTJLCG455NUEKPRHLKLJCGJKU",
+      "address_type": "account",
+      "shares_raw": "218912811275"
+    },
+    {
+      "rank": 65,
+      "address": "GC3ISVU5FSWWKB676TVQNMYWSVV7MBWMHWBPJGSMZC544QPFPYDGOBKB",
+      "address_type": "account",
+      "shares_raw": "216624393892"
+    },
+    {
+      "rank": 66,
+      "address": "GDWJHMXNH6M7WBSUMSKNDGABLMIJGWE7MACUPFBTZCX33ZZCDC25UZPL",
+      "address_type": "account",
+      "shares_raw": "215012289464"
+    },
+    {
+      "rank": 67,
+      "address": "GDR7P45P556MYOWHU23TSOKPERC4PCZ2DTG43UYXPP2ELPZDWE7SCZNJ",
+      "address_type": "account",
+      "shares_raw": "207728172606"
+    },
+    {
+      "rank": 68,
+      "address": "GC35W3ZETTUY7YBODRKJIPUVYS574MMHDM4FHD7Q2M7LDU3FQV4UGGTW",
+      "address_type": "account",
+      "shares_raw": "206090448218"
+    },
+    {
+      "rank": 69,
+      "address": "GACI727MHZHUWCFIX6NMFTBBN7TSWQS27H7KM4XPP6OOMF77LXG5AZZG",
+      "address_type": "account",
+      "shares_raw": "204864649815"
+    },
+    {
+      "rank": 70,
+      "address": "GB2DU4ZPFADD74YOWSRB4PS4UKZ6Y3M47IH4OD232HBYVCSR2FS56T6D",
+      "address_type": "account",
+      "shares_raw": "189738668374"
+    },
+    {
+      "rank": 71,
+      "address": "GDOWQ4ZMCXDB55WGAP76KWTPOWMVCLAJHT23OMYRA7DP3KRT5XR5U4V5",
+      "address_type": "account",
+      "shares_raw": "176767927177"
+    },
+    {
+      "rank": 72,
+      "address": "GBXC7VPR7BOTZX2XDKKL2TFL4ME6CW24S64UIVUMJEQD63BDUPTB7QC4",
+      "address_type": "account",
+      "shares_raw": "169117586367"
+    },
+    {
+      "rank": 73,
+      "address": "GBZSLZ44CYYFK7XL2JLNKM6H6QWPO3ECGJSTEMHIGCTNYO5ZPGAGB5YF",
+      "address_type": "account",
+      "shares_raw": "156552666365"
+    },
+    {
+      "rank": 74,
+      "address": "GAOW66RKXHHUYKRWAW27NBJBBAQ4LFD7SL6CFP7ZNVQVL6AXMOPVFTTI",
+      "address_type": "account",
+      "shares_raw": "153285435483"
+    },
+    {
+      "rank": 75,
+      "address": "GAKE3C7NIXFFOUWXX2ULXEN7I4OHHYLFE5QX3CARL4BFFYN3WWIQA6CA",
+      "address_type": "account",
+      "shares_raw": "148825647783"
+    },
+    {
+      "rank": 76,
+      "address": "GC4CGV74U5GH32D4XDROWYBH5QCF77ND4XNZCMSCB3F3D73U3JUOWGWJ",
+      "address_type": "account",
+      "shares_raw": "141737022846"
+    },
+    {
+      "rank": 77,
+      "address": "GDZK4JBS567MWKLC7O3BIHDP4B2V2RPRBWDU2KML4CPVNIO3W3YXNOOT",
+      "address_type": "account",
+      "shares_raw": "137099846881"
+    },
+    {
+      "rank": 78,
+      "address": "CANSYFVMIP7JVYEZQ463Y2I2VLEVNLDJJ4QNZTDBGLOOGKURPTW4A6FQ",
+      "address_type": "contract",
+      "shares_raw": "128233505337"
+    },
+    {
+      "rank": 79,
+      "address": "GDUOWL73D25L27QQHT724UESPBLS5TKX37WSRT6BMFYW2K7IK55BHZ33",
+      "address_type": "account",
+      "shares_raw": "126129986616"
+    },
+    {
+      "rank": 80,
+      "address": "GC5UG5EGNWDZZTJWDECRDRYF45IZW7KHC5CGAVBMCWEFP2PX2XIUBKFZ",
+      "address_type": "account",
+      "shares_raw": "121947076919"
+    },
+    {
+      "rank": 81,
+      "address": "GAAUMMCT5PVLB5SP7FJYDXKZYDFJLXLJ34EXFREMDWOZLKYVE2PNVZWO",
+      "address_type": "account",
+      "shares_raw": "121522738351"
+    },
+    {
+      "rank": 82,
+      "address": "GCTRNISWSF2OHWYXNRY76A3QNSU3WDPX2MWLIY7DK6J4BFTM7YLTC53K",
+      "address_type": "account",
+      "shares_raw": "120319718640"
+    },
+    {
+      "rank": 83,
+      "address": "GABUR2QAN4CERGIWJV2YUPGNJ6OHNURPUZIL6N7I3FBYUGPYYL74SYVY",
+      "address_type": "account",
+      "shares_raw": "107449025301"
+    },
+    {
+      "rank": 84,
+      "address": "GBNZXBH7SWFPU7WW2D3WGMWZHSH2L3G5XFQO3FTLU5ZIYINOOAI2EQVI",
+      "address_type": "account",
+      "shares_raw": "106527149969"
+    },
+    {
+      "rank": 85,
+      "address": "GDWRJJNZ2LKEMSGLVVV5CXNRDUMAOCWH7A6LLHE22S55SLKAWQ7IOOPA",
+      "address_type": "account",
+      "shares_raw": "99152371995"
+    },
+    {
+      "rank": 86,
+      "address": "GDIDAYNCTXAB2WD7V33B4JQMG7FU4IN4OBJKDLCNTLUIJLWN6AVJX7VL",
+      "address_type": "account",
+      "shares_raw": "98008685401"
+    },
+    {
+      "rank": 87,
+      "address": "GAEFA3JFZP3ELPN7JB5S2VEPKB2ZUBVSYLLTARYEGBDIMXGE4CNJRZQL",
+      "address_type": "account",
+      "shares_raw": "92098956179"
+    },
+    {
+      "rank": 88,
+      "address": "GD3NUJ65TMGJ7CKTSABLJ5ZHZP4F4DXHMFDCDL4EJBCFDK4MD6F46K2X",
+      "address_type": "account",
+      "shares_raw": "91610864025"
+    },
+    {
+      "rank": 89,
+      "address": "GAFE6HR3CH7ZVBHMC4CZJCBSGM4B24SBS32GYSYEL7SVNF3WFEJGT3MB",
+      "address_type": "account",
+      "shares_raw": "90876482934"
+    },
+    {
+      "rank": 90,
+      "address": "GBJY7AY5GIEINQXU5W2NBFEMGTFOTB2OTNCCMKSLVIDXS3DMHG56I6XN",
+      "address_type": "account",
+      "shares_raw": "89180125458"
+    },
+    {
+      "rank": 91,
+      "address": "GB2CFKKR76ZTD5PRRDN2Y6NCHRWVLH4ZNRS3PWSY75SK4SFYGIJNYWVQ",
+      "address_type": "account",
+      "shares_raw": "87266486818"
+    },
+    {
+      "rank": 92,
+      "address": "GBKOURWF7XDXE4LOON3NPOGRICEGWZCUT2I6SOTLGJQFR3MUANXLOQRC",
+      "address_type": "account",
+      "shares_raw": "87171701283"
+    },
+    {
+      "rank": 93,
+      "address": "GB4QXSDFNYCXPSAQUMEV2BFFK4BRAM3KJKE7SS4SJTZKLQIUFT67KB4R",
+      "address_type": "account",
+      "shares_raw": "84135413735"
+    },
+    {
+      "rank": 94,
+      "address": "GASIB4EFSNE5DJIZJ5UTFJKR7RPNKKWXPXBQ2RRPWASOCGGKJSCUMHVB",
+      "address_type": "account",
+      "shares_raw": "83319919811"
+    },
+    {
+      "rank": 95,
+      "address": "GDLKPOO7W6SOWPEM6WMA6I5EIEHY4BPK3XAWGLOEKQIEHSTXQ2WX3SZ7",
+      "address_type": "account",
+      "shares_raw": "81127284724"
+    },
+    {
+      "rank": 96,
+      "address": "GDLOF7T2R4KG5MGJFVAGUZSHI56RPICDB6RT3YJH4K5S6URUTT4GLOYL",
+      "address_type": "account",
+      "shares_raw": "79508788375"
+    },
+    {
+      "rank": 97,
+      "address": "GD2KBXIKQPG2NKZOWPOWIGPC2YELQAEINW4CAMHEDGTKKL7BQG2K27SQ",
+      "address_type": "account",
+      "shares_raw": "77744451201"
+    },
+    {
+      "rank": 98,
+      "address": "GDUPNDRCOUBLTU3XP4JNOM7SLAQWJHM43DBZPU3IQ2RPA2WNPJRSDAQM",
+      "address_type": "account",
+      "shares_raw": "74476133712"
+    },
+    {
+      "rank": 99,
+      "address": "GAEA5RKUQGTFLDABISBRBX2POCGGNWHNLKVRZWBXM775AT553ORW7CES",
+      "address_type": "account",
+      "shares_raw": "73377212117"
+    },
+    {
+      "rank": 100,
+      "address": "GAH4AXT76QELFMSAZSLK7227CVN573JUQ4DF2NDRQV7YEIY3L4URKRTC",
+      "address_type": "account",
+      "shares_raw": "71666291465"
+    },
+    {
+      "rank": 101,
+      "address": "GBKX5IU5DRZNVUKA5GTNUPYKOCAPE5SIGATVEV4GFH5U6PRDV3KD7OAU",
+      "address_type": "account",
+      "shares_raw": "69093006269"
+    },
+    {
+      "rank": 102,
+      "address": "GA4XQJFTIVONNM2MXU5ICJU2HSRVNK6O45EJO7SJF43OXW4TDWQOQZ4W",
+      "address_type": "account",
+      "shares_raw": "68071375479"
+    },
+    {
+      "rank": 103,
+      "address": "GDU4ICJ4W23A4TPQZ6ORIAL2O7Y6ZG6BWWT4PNCJZEU3JZCFR37HTB4H",
+      "address_type": "account",
+      "shares_raw": "67436141195"
+    },
+    {
+      "rank": 104,
+      "address": "GDW7OGVBIKEKP2PM6ITXHGPNAOWFUNWDOD2PPHCMZGBOKDVVP5SKQYH4",
+      "address_type": "account",
+      "shares_raw": "66569232693"
+    },
+    {
+      "rank": 105,
+      "address": "GAFTKWPXSLKPIJMVGPV6V563ER3PA4QOW4I7UY235FVY7ALC2VEM4TAC",
+      "address_type": "account",
+      "shares_raw": "64408204857"
+    },
+    {
+      "rank": 106,
+      "address": "GCU6SLEQWJL7JRNVSR66HLESQRNZZW6TMFAE6W46GG3QH3CRI7X3VRNX",
+      "address_type": "account",
+      "shares_raw": "59213866494"
+    },
+    {
+      "rank": 107,
+      "address": "GBOMDHO2SCHUGZD5ZNMOYB5JYCXGH7Y4AJOGJQK4KR5LBZ64RBDGKFDP",
+      "address_type": "account",
+      "shares_raw": "57405606414"
+    },
+    {
+      "rank": 108,
+      "address": "GDO7VAOZL4D2JHIMLXHHIEJM74DH672SPVB2AR3JOMZYDSD5ADIITONY",
+      "address_type": "account",
+      "shares_raw": "57335121322"
+    },
+    {
+      "rank": 109,
+      "address": "GDLADKDLRXC476LBLR7EHSFRANMLYKGQVPPX3LLMXIGBFQAF3QDY2KYG",
+      "address_type": "account",
+      "shares_raw": "57271773735"
+    },
+    {
+      "rank": 110,
+      "address": "GABWDIZNURBP3DQYI7IUXU2GQSSZWY5R6FYDXX5NQ64QEUAUYFEGM57O",
+      "address_type": "account",
+      "shares_raw": "47410113523"
+    },
+    {
+      "rank": 111,
+      "address": "GB7DNGF5QPJL57IHIKF4AQJUAR3LH3XLWBG4G26YFSDEFIRBV7ENNEPL",
+      "address_type": "account",
+      "shares_raw": "45775666410"
+    },
+    {
+      "rank": 112,
+      "address": "GDXGTS2DLV7N6PT3FFLCQT7SHDKI7TK3PX73P2JFHMU46E3OF2UKKQ44",
+      "address_type": "account",
+      "shares_raw": "45642969962"
+    },
+    {
+      "rank": 113,
+      "address": "GBZLNHWNLYXPTCQU7NPCFVDCFDEKCNN4W2DAG6IST3U6YRAO3Y5XUCI3",
+      "address_type": "account",
+      "shares_raw": "43979435709"
+    },
+    {
+      "rank": 114,
+      "address": "GDFFMOXN6RMEXQGTXM2KLJMDEIJAYQXH3RPY4RSQI2FPMJURKAKCFXRU",
+      "address_type": "account",
+      "shares_raw": "43908360102"
+    },
+    {
+      "rank": 115,
+      "address": "GAJ7BQBEMFJ5P72BRKH32HMBDJFTBTGN55ML6YLO4LR53SE53JJUVM4U",
+      "address_type": "account",
+      "shares_raw": "42692899044"
+    },
+    {
+      "rank": 116,
+      "address": "GDWKIITS2K3RDVXPWCN4SZBZV5COEJ5KQ7N3ZK72YXOVEIYDRGSOJ3FJ",
+      "address_type": "account",
+      "shares_raw": "42385892355"
+    },
+    {
+      "rank": 117,
+      "address": "GBZ67PL7X7DOVRFE6LXXLX4ELE4JCCQRGIH7ZJB7VKULIAC6FWDLSJF7",
+      "address_type": "account",
+      "shares_raw": "42145210565"
+    },
+    {
+      "rank": 118,
+      "address": "GCASHQQINAHSV6P57D4NPIHDCUF5PO2FAG4NHZ67HS2FDKYABWRCPHKQ",
+      "address_type": "account",
+      "shares_raw": "39996753728"
+    },
+    {
+      "rank": 119,
+      "address": "GAIN2HU2ITUZPLGNWSH7JXXROL7MYIWDYXCUQDMQVJXFBEBPETSZYHNF",
+      "address_type": "account",
+      "shares_raw": "39859960731"
+    },
+    {
+      "rank": 120,
+      "address": "GB6G4XAUWPR2GRKZNVU2UFVNSUYJU4YFKYT5MJA234PS5TSCDN4TWLVY",
+      "address_type": "account",
+      "shares_raw": "39799662675"
+    },
+    {
+      "rank": 121,
+      "address": "GBBBTXMJCCD34BNLDIVTL72VUYORCDTVCUZBDRGJMFK3Z77HY65UGNFI",
+      "address_type": "account",
+      "shares_raw": "38790251407"
+    },
+    {
+      "rank": 122,
+      "address": "GDXRCMW4I5LWAB3DAOJKJNLIT36HCXSAMFNMDVU3BHMD4K4JHZXC75T7",
+      "address_type": "account",
+      "shares_raw": "37774849689"
+    },
+    {
+      "rank": 123,
+      "address": "GDJSH2NU2WF6J4P5DL4522DUCABWSTZOKFQ7BHBCFYQ3QKC6FRYWP6OL",
+      "address_type": "account",
+      "shares_raw": "37239152962"
+    },
+    {
+      "rank": 124,
+      "address": "GDEBK36QZ4K73XQFJEMEZDVEAZOOXE6VXAYVBMI63XRO6QDOOTAYXZXU",
+      "address_type": "account",
+      "shares_raw": "37109006256"
+    },
+    {
+      "rank": 125,
+      "address": "GA3LI6A422JW3OWRFU6FKD26N3EDAG2OKQ76LX3NAM7XFARTNQE2Y2J6",
+      "address_type": "account",
+      "shares_raw": "34180714733"
+    },
+    {
+      "rank": 126,
+      "address": "GDQQBII7E3LJJALSQ2YMOVKV3SJ57XO4YWBDWIPRWEV3HN4P36V642VN",
+      "address_type": "account",
+      "shares_raw": "33810185822"
+    },
+    {
+      "rank": 127,
+      "address": "GDH7YKGBMCUQW65HQBDWMGBT6EJ6TAV3GZILBA4W2IIIXK34L5MGXSBA",
+      "address_type": "account",
+      "shares_raw": "33719238660"
+    },
+    {
+      "rank": 128,
+      "address": "GBCCLRP6NANKNJ5X5FGKUNECCBLZ5G7E2AEJHDBRZP4WPZWHV6B7HQVJ",
+      "address_type": "account",
+      "shares_raw": "33586417493"
+    },
+    {
+      "rank": 129,
+      "address": "GBPUFOPDVPGM56MIO4KYSNV2N4XLYBZAXL6QMD75JWG7GC5L6ANFSYBL",
+      "address_type": "account",
+      "shares_raw": "30824308547"
+    },
+    {
+      "rank": 130,
+      "address": "GAYJJLHV2QQ4W4UKLQI4AKNBVMMJDK24IKYVE253FYNDN4YZMRV42HS5",
+      "address_type": "account",
+      "shares_raw": "30740026723"
+    },
+    {
+      "rank": 131,
+      "address": "GAXY566E3ZQBXOGFEX7VTZZO2ZUBZMZKYDJYGYR2WBT7VWHX3ZERKGYN",
+      "address_type": "account",
+      "shares_raw": "30730141076"
+    },
+    {
+      "rank": 132,
+      "address": "GDZJGEJ3GUMDFYMBIE54G4MWCNCSSIWIDAWUKFKZPQ6BMDOM72V3WRB5",
+      "address_type": "account",
+      "shares_raw": "27235066039"
+    },
+    {
+      "rank": 133,
+      "address": "GDFV3BOYPH4WL52WZNYY5S3G7FTJZIZY7U2LSHQGUZNDHYGD6XJB7E2M",
+      "address_type": "account",
+      "shares_raw": "26384287503"
+    },
+    {
+      "rank": 134,
+      "address": "GAUNEBFNFBUAOM2T6CLV3AAXD2LLRRF7CFXBWHY3JZ5SJ3IQ6G3UUILX",
+      "address_type": "account",
+      "shares_raw": "25023392824"
+    },
+    {
+      "rank": 135,
+      "address": "GDVO2AARC25LGTMOLVKCNDY3F2KHQ6D6Y7VGWYYY3S3P36XTV2WKGTMV",
+      "address_type": "account",
+      "shares_raw": "24486240628"
+    },
+    {
+      "rank": 136,
+      "address": "GAAXA5VR2W3R6RW57TLH73LYKCSZAFOOPBMCPUT7TBJSVXC34ULVNXNV",
+      "address_type": "account",
+      "shares_raw": "24456386938"
+    },
+    {
+      "rank": 137,
+      "address": "GAEVKTD2CL3MPPQBUSYJERWWRVPGFGBLXNFQXDVOD2YEILOP6OPJXDNV",
+      "address_type": "account",
+      "shares_raw": "23916214211"
+    },
+    {
+      "rank": 138,
+      "address": "GBHT5GRGCZOV3XHVEOQGZDF25FWLKZTNYFCQIBRYPBNEA7SR3ZMG2AMW",
+      "address_type": "account",
+      "shares_raw": "23732513673"
+    },
+    {
+      "rank": 139,
+      "address": "GAUNQMIH6WOF7CRZWBTHIU4EZFOQEJSJE4PGXY673EFRCJKEQEXNNRPK",
+      "address_type": "account",
+      "shares_raw": "23085575655"
+    },
+    {
+      "rank": 140,
+      "address": "GBMYD7BFSJEPRRQX4VJTUORRQONV4BETTRK3IL6UZROSP3QJJNBEYOA7",
+      "address_type": "account",
+      "shares_raw": "21518109265"
+    },
+    {
+      "rank": 141,
+      "address": "GAQ25ZOJ3RPBTZLRVEHHXV7EGUQCDCS5Y7GXUDWJZZXLC6N5I3U3EGK2",
+      "address_type": "account",
+      "shares_raw": "21491854543"
+    },
+    {
+      "rank": 142,
+      "address": "GDDVWZQIFSSZYXVYSHPJS4OCMCTAV524JXRQZRRK6GHQIPRII532H2Q4",
+      "address_type": "account",
+      "shares_raw": "21094713490"
+    },
+    {
+      "rank": 143,
+      "address": "GD66S6GSKYTXZ5BT4RIYTBEBOE7WBPNIJB62SLYCAJNKDUS6F67SCEUI",
+      "address_type": "account",
+      "shares_raw": "20946056510"
+    },
+    {
+      "rank": 144,
+      "address": "GCJ5SLDGO4MUP6ATCD6C42V74S5N2YLNPX77C7YY7G72EOVYIIHAXDN3",
+      "address_type": "account",
+      "shares_raw": "20869473857"
+    },
+    {
+      "rank": 145,
+      "address": "GD55EXGLJLE43QGBKBW66XDAGMOFR4O7WATITQH3JEF2VJ4IP55W4UF3",
+      "address_type": "account",
+      "shares_raw": "20587230540"
+    },
+    {
+      "rank": 146,
+      "address": "GBE4FY6RLT4KYM35MR47ZXATCG67ONZ7VKESEMHFPF2QF3VVHV2QM6L2",
+      "address_type": "account",
+      "shares_raw": "20383282493"
+    },
+    {
+      "rank": 147,
+      "address": "GAK5VU3VPVI5GXKUV5AKCXJEOWOXPCGLXTSTZ53JGRCK3KN5ISFXTCOQ",
+      "address_type": "account",
+      "shares_raw": "20087879842"
+    },
+    {
+      "rank": 148,
+      "address": "GCMMBHV4NBHZYQIQP5E2XLS63JGIDBUKMIPVAGRD3UM67ULCXHSG74A4",
+      "address_type": "account",
+      "shares_raw": "19293377367"
+    },
+    {
+      "rank": 149,
+      "address": "GDEO5NUDIUGNDS5FDB2DUNZSAB4OD6JXMJM4NVJPIRDKOXU6O76WRC3H",
+      "address_type": "account",
+      "shares_raw": "19229695202"
+    },
+    {
+      "rank": 150,
+      "address": "GCELQZQAR6QSCKDGVVZOBHABF2DYDDQDEBJ3FME43EIP3NQSIKOR3ZWQ",
+      "address_type": "account",
+      "shares_raw": "18634169812"
+    },
+    {
+      "rank": 151,
+      "address": "GCR4YGEKCUBQLOCQ4AXOGKZL3XQRKSY52ATG26L6PEJH3OZOFYNC6UZB",
+      "address_type": "account",
+      "shares_raw": "18395974641"
+    },
+    {
+      "rank": 152,
+      "address": "GD4OIBG6QDXOKEVA7E6FWAMXIMIUES7FTKD5TLVBFQXSEAVLCHXT453F",
+      "address_type": "account",
+      "shares_raw": "18066815377"
+    },
+    {
+      "rank": 153,
+      "address": "GBWN3I4L6KABFSSJB6WHRXT5CQGW3PY5RG3QCGKGQVGSR7QEJMOQJBEV",
+      "address_type": "account",
+      "shares_raw": "17650166527"
+    },
+    {
+      "rank": 154,
+      "address": "GCZNSVG3RKE7YF3DWK45MWK6ADIXDE3SKAUWOEJOY2WZSZY6H5VPT24K",
+      "address_type": "account",
+      "shares_raw": "17535707039"
+    },
+    {
+      "rank": 155,
+      "address": "GA6L2HMDXVTV7C2ONSCITALK2XUMFVLM5CVGAYZ6WOTUU47F24FURFPJ",
+      "address_type": "account",
+      "shares_raw": "17152085721"
+    },
+    {
+      "rank": 156,
+      "address": "GANMIQKRY5IBWVW2LRSQENMM2QMYBZCA7JYDRKMLQFS5PRV34ZDWQBRO",
+      "address_type": "account",
+      "shares_raw": "16133991598"
+    },
+    {
+      "rank": 157,
+      "address": "GCDNQRAMHQF3PFM6YFKCFNDKSQH7RUVH43ENC2S4P6FSFY7KB5VQJURF",
+      "address_type": "account",
+      "shares_raw": "15033638337"
+    },
+    {
+      "rank": 158,
+      "address": "GBM5OQN7TITF7PIZEPE7M7IHMX5YIHIRBH4M4MNLBY7CAROH2RTR233A",
+      "address_type": "account",
+      "shares_raw": "14974922519"
+    },
+    {
+      "rank": 159,
+      "address": "GDWERO74NNU4DMLRK4R7DNLGC54QZZW5XYAU3ID44OORT6DYGRXQJCYO",
+      "address_type": "account",
+      "shares_raw": "14388959495"
+    },
+    {
+      "rank": 160,
+      "address": "GDLY224BPMQKXD37H2UE4ODCYVLNA7T5SJAPRFRHHMYDY6RAGYGKW3HF",
+      "address_type": "account",
+      "shares_raw": "13923355730"
+    },
+    {
+      "rank": 161,
+      "address": "GCFUKAAGICVWV4ZHFSJEC5OYVBUJSAJCTLZF7MO3HKCB3GTTWW57IGOY",
+      "address_type": "account",
+      "shares_raw": "13288457137"
+    },
+    {
+      "rank": 162,
+      "address": "GA7UMBA276ZRNYY6GAII4NVBI7Y6ZPGUL4JGDBH7BAEULUO7OAL7SQEY",
+      "address_type": "account",
+      "shares_raw": "12959994793"
+    },
+    {
+      "rank": 163,
+      "address": "GC626ZRISBXL2GFD3QGLNHWCK7TTY2ZNBYSDEEUKGGZUQLSXGVLFIIKH",
+      "address_type": "account",
+      "shares_raw": "12239248279"
+    },
+    {
+      "rank": 164,
+      "address": "GA7GJDTBJ7Y6TC6T22UUXFCPHQUMGP57YQ5X3NDKWEPUFBKQGPGGTVOF",
+      "address_type": "account",
+      "shares_raw": "12101393724"
+    },
+    {
+      "rank": 165,
+      "address": "GAD2NZH7LOFMGEMXAMZBHKNQNJRMGUMZPA27HNETT66KVS7DZMH2C4PW",
+      "address_type": "account",
+      "shares_raw": "11993161192"
+    },
+    {
+      "rank": 166,
+      "address": "GCXJPN7OAV53YWVOB7K57FB7VDRCJR4ZZWPAM4KNVDXTWXVTSHF7UK2C",
+      "address_type": "account",
+      "shares_raw": "11579306025"
+    },
+    {
+      "rank": 167,
+      "address": "GCKBNEKIMERQUCISQBDAALFZ7U3FXALUZDJMQNSL3PK4HAYBIW5MHOOT",
+      "address_type": "account",
+      "shares_raw": "11252472360"
+    },
+    {
+      "rank": 168,
+      "address": "GBPJ2YBLYTXH2VLSEHFAYAOVEFGA62PTLPYKIMTJXV4KPU4WN2ICCOR4",
+      "address_type": "account",
+      "shares_raw": "10584647260"
+    },
+    {
+      "rank": 169,
+      "address": "GCI5XB4IUD42BPV7IMPELNQ6QK7ZRRI4VORLU4CLQQAQYWTHT26XUSRM",
+      "address_type": "account",
+      "shares_raw": "10560613499"
+    },
+    {
+      "rank": 170,
+      "address": "GD7N5NXCQGI7KTXQUT2S6N7RO4SH42ZKTMJMQTBA5QRLVADIHBABFEZ3",
+      "address_type": "account",
+      "shares_raw": "9880615853"
+    },
+    {
+      "rank": 171,
+      "address": "GBZO5Q5XWPMGM2CSWYSZT6WHLQNOYKES5TL47ILKBSEI3US2R3YVGQNY",
+      "address_type": "account",
+      "shares_raw": "9394508517"
+    },
+    {
+      "rank": 172,
+      "address": "GD2OKD73SK7OHBSJNOMJ3TFZ6HVSXSEQCZGA5NCWGWDOO6QCB277PQ2Q",
+      "address_type": "account",
+      "shares_raw": "8985281811"
+    },
+    {
+      "rank": 173,
+      "address": "GDRMYULJE6RYC3WKRKVKFXYBTXMKDOXUXBXQITX7CB7DWZQAQWMGMTCE",
+      "address_type": "account",
+      "shares_raw": "8763264351"
+    },
+    {
+      "rank": 174,
+      "address": "GAYBKMYJORD53T5ZKG2AARH7HV2SY5RJGXMJBXZCX5GGGXT6YDIX6JD4",
+      "address_type": "account",
+      "shares_raw": "8672205154"
+    },
+    {
+      "rank": 175,
+      "address": "GDXQ7PQUGQMF2BQUOO4HN5KLCKDCOEFB6WQVBR3AS5Z4RFRRVAIBO2SW",
+      "address_type": "account",
+      "shares_raw": "8618902554"
+    },
+    {
+      "rank": 176,
+      "address": "GDQ2FWSVHOPFN25RYZ3QMA577HLSZZ5XOPXFJT4624CPDMPPPS43DZRK",
+      "address_type": "account",
+      "shares_raw": "8596655823"
+    },
+    {
+      "rank": 177,
+      "address": "GDUNI72QSE7X4L3E2JB737UABNDBEBSD3NBDWLIX52FCGJ4PIZZQ6FKW",
+      "address_type": "account",
+      "shares_raw": "8487524591"
+    },
+    {
+      "rank": 178,
+      "address": "GDOPU76JQIWCEO7K2MWHC6QKI3JTR6DX6KZUQF2KR53MWAEFKL5ZUDFV",
+      "address_type": "account",
+      "shares_raw": "8222644369"
+    },
+    {
+      "rank": 179,
+      "address": "GB7CKQ6RDEZAG7A2MZU7AQL6FHMKVUSFYZ3FECFHZBYKKJF6HI6JA33S",
+      "address_type": "account",
+      "shares_raw": "8181604773"
+    },
+    {
+      "rank": 180,
+      "address": "GD6QWNATHU2ZMRPO5KJJ46FWCQ2OXGOMP22GTEUHUO2CIJJM6TQK46FW",
+      "address_type": "account",
+      "shares_raw": "8171447364"
+    },
+    {
+      "rank": 181,
+      "address": "GD74ZN47X5TTKNBWSLY7W34TH5DHO6HPEBVB37FZZ3KBNOD7RKGAQFMK",
+      "address_type": "account",
+      "shares_raw": "8119132493"
+    },
+    {
+      "rank": 182,
+      "address": "GCLEXQSBHGXMAQ2VO332GZ74XP7FHFY54AQ63YLKSGJAYZECZKCHB4AT",
+      "address_type": "account",
+      "shares_raw": "7932492123"
+    },
+    {
+      "rank": 183,
+      "address": "GASAXWRQCKI5RRLBMFMUOV342DY4TKJM6DE6HZMLGOPKMZLKK43MMDXP",
+      "address_type": "account",
+      "shares_raw": "7869959784"
+    },
+    {
+      "rank": 184,
+      "address": "GCGTA4E6CV6HQWHW6X4BBE526ZK2QRRCRBVFUQZ2N6BYH5C4JMO7VOB7",
+      "address_type": "account",
+      "shares_raw": "7863464666"
+    },
+    {
+      "rank": 185,
+      "address": "GD6XSMQJ47EHHJOWXQOND5YDVZC37JWZJHYHBKE6QJFSLLJ5KQXM5QS5",
+      "address_type": "account",
+      "shares_raw": "7690607700"
+    },
+    {
+      "rank": 186,
+      "address": "GCAUTOR5KRMXWNYWRRKNFVVHQYTGR6DARBKWL24RKDR7JCVSI6VLJUI3",
+      "address_type": "account",
+      "shares_raw": "7673208333"
+    },
+    {
+      "rank": 187,
+      "address": "GCROWNS72X3DJ65PLKFT3ATWFCKBR4WLSOGAR6NGKN3NV3I67FINBEAR",
+      "address_type": "account",
+      "shares_raw": "7482033647"
+    },
+    {
+      "rank": 188,
+      "address": "GATFD6DPZ7SQGWEUBKXO5WCKCRWKCI5NE6H3KYY3NWYBZB74SVPGWEGN",
+      "address_type": "account",
+      "shares_raw": "7341546878"
+    },
+    {
+      "rank": 189,
+      "address": "GDNREBWS4RV6TJIG67D7GENUYXXALGIECEODEOY5HRYMEWBGJGQTXUHW",
+      "address_type": "account",
+      "shares_raw": "7032971058"
+    },
+    {
+      "rank": 190,
+      "address": "GAYO3E3XPRY2E45CI6WVC2TKV32E5SDQQWVKNKPQJVNCGXUW3ZVFXFQ3",
+      "address_type": "account",
+      "shares_raw": "6951970950"
+    },
+    {
+      "rank": 191,
+      "address": "GBCRDN4B6KY456PNKGPTB7OJXEHOBMMZ6EQ23TIRBMIXZUUJODL5RDYM",
+      "address_type": "account",
+      "shares_raw": "6833886691"
+    },
+    {
+      "rank": 192,
+      "address": "GD4FPIU7SHTOPO2KFDNWUPFW2C6Z2JGDTFDLEDNT5JON2HBK6Q7HN3DV",
+      "address_type": "account",
+      "shares_raw": "6608972582"
+    },
+    {
+      "rank": 193,
+      "address": "GC5HTG6WYTMW4LOJF7IM7TEGIKP6ZY2K7L4HGNQDF7GSJRA5CS5QB2A5",
+      "address_type": "account",
+      "shares_raw": "6236684150"
+    },
+    {
+      "rank": 194,
+      "address": "GCUXQ2D6IQMTLDUFBCDJ5LY2ALY3AJFOQPPJ4BL2B2SIRDGFG3KH7V3U",
+      "address_type": "account",
+      "shares_raw": "5618213808"
+    },
+    {
+      "rank": 195,
+      "address": "GD25WGXPNX74NJHXOD4YMEEW3WWA6GR67TNYGPME3HPIEN3QLMRLFQV7",
+      "address_type": "account",
+      "shares_raw": "5602559686"
+    },
+    {
+      "rank": 196,
+      "address": "GCQMY25BMVCTFD55BJ2NADQS4RFZOYDHS37DD6FLRH2PYXSTP32MAFZD",
+      "address_type": "account",
+      "shares_raw": "5515111740"
+    },
+    {
+      "rank": 197,
+      "address": "GBP5SEQK5BJZNUMJD5CZ7NTP3BCX7NXFPJEEYPQF55GSNJXJA2DMRFJP",
+      "address_type": "account",
+      "shares_raw": "5047116614"
+    },
+    {
+      "rank": 198,
+      "address": "GAXMNHRN3LGE72DECAZIHKWDX6ITPO6IMUB7XJRUGDP4AHGBHWPD75YL",
+      "address_type": "account",
+      "shares_raw": "4671777438"
+    },
+    {
+      "rank": 199,
+      "address": "GABX66IJGCEZC77VHHVSRUVN2NMFT256K2HNIGQD5DTZMJVEYE5K5GC4",
+      "address_type": "account",
+      "shares_raw": "4382913957"
+    },
+    {
+      "rank": 200,
+      "address": "GBOYKBTFCAVPWRKCHPRWRCDTTFLEWHYWI56X5F56J4F6RWJ6KLR4M5ZG",
+      "address_type": "account",
+      "shares_raw": "4354064374"
+    },
+    {
+      "rank": 201,
+      "address": "GDCXLIKTW5AFX4TBQSELDVXESKGODYVZVXDXVP2HWZH3QFUD6DCVVCY5",
+      "address_type": "account",
+      "shares_raw": "4335388171"
+    },
+    {
+      "rank": 202,
+      "address": "GDFUZMY462HQXNGZXE6Y53LGUF4CMML2AU37C2RTFPT4XUFM25ZIFK7B",
+      "address_type": "account",
+      "shares_raw": "4218915753"
+    },
+    {
+      "rank": 203,
+      "address": "GBEXED74JAQ6LBTDFOKIITCEZLUU5T2W7J6MWJVR6QL5QMTMFCC5Z7ZJ",
+      "address_type": "account",
+      "shares_raw": "4179850014"
+    },
+    {
+      "rank": 204,
+      "address": "GDVXSVJ6O45JEWVSTPL5H3BSCLZSF6Z72NFMXHYFKWA2C7IELXFQKMYN",
+      "address_type": "account",
+      "shares_raw": "4088677800"
+    },
+    {
+      "rank": 205,
+      "address": "GA4LVBBHFJ2KYR56LDIGTGI3KGFUSM5CJ266RAPOMSOGAVIVYHOFQF5B",
+      "address_type": "account",
+      "shares_raw": "4079613385"
+    },
+    {
+      "rank": 206,
+      "address": "GAB7QWJFSZD32G3MTWEJC7MHLRYHVRDQAKRWAAPKZI7NJTZCW2NVNHA6",
+      "address_type": "account",
+      "shares_raw": "4029388155"
+    },
+    {
+      "rank": 207,
+      "address": "GAN2FWNA2YUMUFLWBF3QKV34UZ4MK7VQ5NE2LNRUBQ3D3NNMYBP6ZIXR",
+      "address_type": "account",
+      "shares_raw": "4027325514"
+    },
+    {
+      "rank": 208,
+      "address": "GDMOYTT33DVR5W43DSHAFMKE2A57K75JRDZZKXTWUODQYRXIOMVUGPDK",
+      "address_type": "account",
+      "shares_raw": "4002018564"
+    },
+    {
+      "rank": 209,
+      "address": "GDQVYP5XGSF7F7YSGFGBACGT4EEDN4TXOMYNQISS4GT66X3PJGJOW53Z",
+      "address_type": "account",
+      "shares_raw": "3841548101"
+    },
+    {
+      "rank": 210,
+      "address": "GABR5FJYD4AITJWFV2YOTEQKJPKSGMC37ESKRU6FEGNNRYV6YAPXZPWK",
+      "address_type": "account",
+      "shares_raw": "3811209106"
+    },
+    {
+      "rank": 211,
+      "address": "GAD7ZGQ5FT7MWLEJHGKQ36HDQMRHCFJIBA5ICWYT2ERW2TCWG2MIZUUD",
+      "address_type": "account",
+      "shares_raw": "3751095778"
+    },
+    {
+      "rank": 212,
+      "address": "GAU3MOAHNR3B26X535SHXPYU7575BWCDVUGIOX5VAMTT664HZ3JK4IVZ",
+      "address_type": "account",
+      "shares_raw": "3642691724"
+    },
+    {
+      "rank": 213,
+      "address": "GCRCLPLZCYPQHOKRQOOMZV3JMO75WG2IU4P3W46N6OXAGOUYJH7B2SDL",
+      "address_type": "account",
+      "shares_raw": "3496584511"
+    },
+    {
+      "rank": 214,
+      "address": "GDX3PXYEDCG6BI3FUYUQAKUJ2W5QHS2FYN2CSOUMPWS4JTGFVUB7SSXU",
+      "address_type": "account",
+      "shares_raw": "3461227427"
+    },
+    {
+      "rank": 215,
+      "address": "GCGMT4G6KSNXME2ZUQU4RCKEKAPH3LVXWJ3HK23J5YK37LIOOONTROBN",
+      "address_type": "account",
+      "shares_raw": "3409325261"
+    },
+    {
+      "rank": 216,
+      "address": "GDW4ZDNWSLMKWKSHBTHKCURKMNFEWKNE2KYJ3XSNDMCC4UTNLJKRA5ZJ",
+      "address_type": "account",
+      "shares_raw": "3401247020"
+    },
+    {
+      "rank": 217,
+      "address": "GBKCQZ3LGRZWTOGC3XBX3RSV6KGW6ILK4HNN3ZP4YCFFU7P73VQ4UA6I",
+      "address_type": "account",
+      "shares_raw": "3377395512"
+    },
+    {
+      "rank": 218,
+      "address": "GDPCWNUKVGB6PY256ENVOC3X7RKTWSETXHIM55E7PXCGT4J3ZMUK5WVG",
+      "address_type": "account",
+      "shares_raw": "3296075440"
+    },
+    {
+      "rank": 219,
+      "address": "GDKNDOQL23432Z7HMTFELXPFXAAUDWDJZXOTR73TSWY4XUGN2YMQHVM3",
+      "address_type": "account",
+      "shares_raw": "3147685808"
+    },
+    {
+      "rank": 220,
+      "address": "GDVQWV665JVBFBMXLAUYLH4XK766MATVAUDQAV7L32POWGT2CFGT4F5R",
+      "address_type": "account",
+      "shares_raw": "3074126239"
+    },
+    {
+      "rank": 221,
+      "address": "GDRUHABTMTXDDEICK6ZVEQZARU7RDE27B6LM6SGRXG7CRB5JDAZJ7KWJ",
+      "address_type": "account",
+      "shares_raw": "2977215062"
+    },
+    {
+      "rank": 222,
+      "address": "GCLSPJRCWAEK4O7MEUY7HYH67ASGFWVZMBM7GXLLC3GKERJ5PLFYOYPX",
+      "address_type": "account",
+      "shares_raw": "2870246898"
+    },
+    {
+      "rank": 223,
+      "address": "GAF3CZTL6CFUPO2T37QL6WO5UANPOL5GQ3UN46SZNCNOWIYZRXG6YOFS",
+      "address_type": "account",
+      "shares_raw": "2813658494"
+    },
+    {
+      "rank": 224,
+      "address": "GC4XQZBJS6OABA7VSK2PYFU7PVWZS22TTEDA4XUQCALXBBNYKZSBTZPY",
+      "address_type": "account",
+      "shares_raw": "2803958545"
+    },
+    {
+      "rank": 225,
+      "address": "GDUD75R5KJ5BNDBEEWUNFRZJ3EDOHLBJP4F6MEEB2PGHAVMQF3TKJPBJ",
+      "address_type": "account",
+      "shares_raw": "2701054970"
+    },
+    {
+      "rank": 226,
+      "address": "GD46UAKTBQYCGG7FW6BKYOWFGHWAWJU6TKMDHYM3RIATZZ7OE4KJECGH",
+      "address_type": "account",
+      "shares_raw": "2624947661"
+    },
+    {
+      "rank": 227,
+      "address": "GC5SU2SJ4VFGJE7RZZHVLOYRE4JJRBK5SULZHKYSHMUOP3UIGB3653L4",
+      "address_type": "account",
+      "shares_raw": "2597509800"
+    },
+    {
+      "rank": 228,
+      "address": "GC72GBUP2RYKF7UPAAFTCTYZ37Z7W6IRYE6MPKWSDXWCVGFIVO6RV7FN",
+      "address_type": "account",
+      "shares_raw": "2534389630"
+    },
+    {
+      "rank": 229,
+      "address": "CBUTN4KJSULJAUZYTYIGSMYAOO7PBJSAQ5OP6UTGYHOXA6UQYBAEOBB3",
+      "address_type": "contract",
+      "shares_raw": "2532073540"
+    },
+    {
+      "rank": 230,
+      "address": "GDID3OX5UATDL3FTQ7BWSDIHSWMXXZRLFVKXCZ2K4CJNVFYTGH6EWSVC",
+      "address_type": "account",
+      "shares_raw": "2488409451"
+    },
+    {
+      "rank": 231,
+      "address": "GB7NZNREBS6H6PYKVOF7FJDQMSKRSGWIE6IWULLJUZVAX73MTUL6NFF4",
+      "address_type": "account",
+      "shares_raw": "2254905424"
+    },
+    {
+      "rank": 232,
+      "address": "GCZWQYXSW4AD62DEF5PBEZAKMSUKM6FCJ2YPLXGE4IBQJXENG6KSLIUC",
+      "address_type": "account",
+      "shares_raw": "2246246579"
+    },
+    {
+      "rank": 233,
+      "address": "GBEF2L62K3K4AXIAHE6RKNXMX3S67D3J7TPXKY3YZQPLBDEHBWYJ6F62",
+      "address_type": "account",
+      "shares_raw": "2240623770"
+    },
+    {
+      "rank": 234,
+      "address": "GCSM6QASLFOSOPBOQLOQ3YBOJOZQBHVLXCP3PWCUNB2X342IX2HQ622F",
+      "address_type": "account",
+      "shares_raw": "2226010964"
+    },
+    {
+      "rank": 235,
+      "address": "GCXZG27ZTUKA7RF37OVIAI73777QYYSV6SKYQCE6HLVFANWXVKTEI7KE",
+      "address_type": "account",
+      "shares_raw": "2067522434"
+    },
+    {
+      "rank": 236,
+      "address": "GC6GZHQ2R2BYQWT6HMK7CZKZS6AWN7OXW5ZVEAQOHTXIUKJ2BVYIQTE4",
+      "address_type": "account",
+      "shares_raw": "2035909404"
+    },
+    {
+      "rank": 237,
+      "address": "GAKL6IWNAFDFETXPIHBNOUVD5LSZFFPFHPCN3XLATIKGFJOMIF5R7JYV",
+      "address_type": "account",
+      "shares_raw": "2025576804"
+    },
+    {
+      "rank": 238,
+      "address": "GCY6N3Y3E7FQ65IGRBFSPXELJXMIFYZQCWJTSCFBJDBKSHJOLL7SBG6D",
+      "address_type": "account",
+      "shares_raw": "1990993404"
+    },
+    {
+      "rank": 239,
+      "address": "GA3UP2PHZQSZLGP5QEGJBXVWCU4PU2CFY7NDP4JG7VZWM7GC7TGTIMCB",
+      "address_type": "account",
+      "shares_raw": "1961651732"
+    },
+    {
+      "rank": 240,
+      "address": "GCC3DIKMODNJMHSWEMPDZNF3BO55GK4SSWPRSOQCQHRE5R53FCQYTMBY",
+      "address_type": "account",
+      "shares_raw": "1875413044"
+    },
+    {
+      "rank": 241,
+      "address": "GATB4LSZQXX62SLUMYDPGIOWWSYM2QCTHI5SG4SI6JQTX6ODCENKNNP6",
+      "address_type": "account",
+      "shares_raw": "1848959405"
+    },
+    {
+      "rank": 242,
+      "address": "GC3TIQL2X6LB72RIDZYNKDVCADUZ6BZMGUWPWGCUJJZEQFXIM2IVNQSY",
+      "address_type": "account",
+      "shares_raw": "1819430925"
+    },
+    {
+      "rank": 243,
+      "address": "GB3SHL4HC77VBLN7KJM4EMWJG7N2JJV45PKSFJSS5EFX6HIB2E3OVEFG",
+      "address_type": "account",
+      "shares_raw": "1782697417"
+    },
+    {
+      "rank": 244,
+      "address": "GDW2RYFP7NBMWNTE2CCS5TUI3HN3N3PVP46XLJCSXTDKZSWKBTFT35FH",
+      "address_type": "account",
+      "shares_raw": "1767685919"
+    },
+    {
+      "rank": 245,
+      "address": "GC7WRELSV3MNZLHMNWVC4ADRTTVNEA46FARFQDU6QFJZLHRRV55HS6IV",
+      "address_type": "account",
+      "shares_raw": "1763906772"
+    },
+    {
+      "rank": 246,
+      "address": "GBFUSXHPGWH5C45HRY263MFY5Z63JOQXG4SPKQMURFVTMXYV7Z2QTVB7",
+      "address_type": "account",
+      "shares_raw": "1684735302"
+    },
+    {
+      "rank": 247,
+      "address": "GC2YM7ZWTKJ7STL272N2VESSRCEANUERDNTYNWDPMQHGTZLY2MC2UIXE",
+      "address_type": "account",
+      "shares_raw": "1646260111"
+    },
+    {
+      "rank": 248,
+      "address": "GCUZMS67FDE7LEFFM5OP3TXEFXXBJQ7447WW3BUQIVMQHVTNEUXDXKHC",
+      "address_type": "account",
+      "shares_raw": "1643798530"
+    },
+    {
+      "rank": 249,
+      "address": "GDP2ZIFJTDZT2R2C4CFSTJJQE2U26FFTAXRXYWPWKW5USEB6ILJBUCOT",
+      "address_type": "account",
+      "shares_raw": "1637245392"
+    },
+    {
+      "rank": 250,
+      "address": "GB5PQUYVTZM4CXRAGQXUJWTWPZ7VL3LCMUMI7PZEJK3QNIH3V46JA5TG",
+      "address_type": "account",
+      "shares_raw": "1607045258"
+    },
+    {
+      "rank": 251,
+      "address": "GAORM3N3RH2LVHI47LGFG4WFGI4ZO4KWMGDSYWFPLSWUQC2QOKPUO4ML",
+      "address_type": "account",
+      "shares_raw": "1597151253"
+    },
+    {
+      "rank": 252,
+      "address": "GBNYPW5RZ6ODXJHCOF7CO5AJCJWG4HR2FW7EDW47UA6TNQDKZJMOTJ3R",
+      "address_type": "account",
+      "shares_raw": "1594519786"
+    },
+    {
+      "rank": 253,
+      "address": "GDYXHEQ6SPE4LLXZRFCTS6ME4YVU4Z7E4JO2WQ2EA62DHCLI3RJF2PZV",
+      "address_type": "account",
+      "shares_raw": "1565871057"
+    },
+    {
+      "rank": 254,
+      "address": "GAV7LTQUR6N5MZAJSWSPTK2EPBDTPYLPS3WX7X2YSRJQPVG4W7TZ3JB4",
+      "address_type": "account",
+      "shares_raw": "1509963381"
+    },
+    {
+      "rank": 255,
+      "address": "GAI6QKZE22FGTOGUO4PQLUPPKJKGZ5P3LQWU7FRZL27ANKDTBG5IALCB",
+      "address_type": "account",
+      "shares_raw": "1443411856"
+    },
+    {
+      "rank": 256,
+      "address": "GDCRH4L5DJMIQGXT6TFD52LG7NV434HTAT6TSY5L2NIIFRQMKH3YKFEN",
+      "address_type": "account",
+      "shares_raw": "1440482558"
+    },
+    {
+      "rank": 257,
+      "address": "GB737IWLMWJ4OXAY7J3BXUKRRYGMWZDGPD2XQXJS2PKC7TZYLTGUEDIM",
+      "address_type": "account",
+      "shares_raw": "1438489033"
+    },
+    {
+      "rank": 258,
+      "address": "GBTH2HETHP6JG4LLITOHPDZKFXQXNTAULXYVSMXKZYO3774X2JVIZT52",
+      "address_type": "account",
+      "shares_raw": "1422680354"
+    },
+    {
+      "rank": 259,
+      "address": "GDUI7TYFVMDIZN7ZTQXOHW7BGV4HCQXGU4DVNUB63ABDUMPXROOVM7LO",
+      "address_type": "account",
+      "shares_raw": "1354558732"
+    },
+    {
+      "rank": 260,
+      "address": "GA2YLWYKP2TXIVD662LZOH3H4ASJZG74ZINX76EG5LOLRST4H7SCQ3NY",
+      "address_type": "account",
+      "shares_raw": "1327706303"
+    },
+    {
+      "rank": 261,
+      "address": "GAX6DP3PXYV4OCTWP4JES4YXVHDN5CF5ZLPYW35SIE2HUE5SXC7CISYO",
+      "address_type": "account",
+      "shares_raw": "1288285197"
+    },
+    {
+      "rank": 262,
+      "address": "GBTC6T3LZ5YXZTKHROU52XVU5XMLFGOREG3E3M3S2M4QIEINRAKOEHOL",
+      "address_type": "account",
+      "shares_raw": "1215025142"
+    },
+    {
+      "rank": 263,
+      "address": "GAKK7F5LOCROUNEJUVI4IJWU2SPYAPME2UPEY2TD7SGYBQN4ZVWJJANB",
+      "address_type": "account",
+      "shares_raw": "1189567869"
+    },
+    {
+      "rank": 264,
+      "address": "GCITCZ32ZNAYUVQZBNBG7RLV4YA7LKFNTFG6SN6HGM47L5BYFXG7AEXY",
+      "address_type": "account",
+      "shares_raw": "1168216738"
+    },
+    {
+      "rank": 265,
+      "address": "GAO2RRDOOQJSESRS4LLJFDRFOJYOWP5OYJHVMOW4VABG5QSO4DXANTSZ",
+      "address_type": "account",
+      "shares_raw": "1162760605"
+    },
+    {
+      "rank": 266,
+      "address": "GDEU7LRIODDJOCPCMX6H3F2MKWYXBR3AW3TOCB5YBCGWDEKEBDU4EZWZ",
+      "address_type": "account",
+      "shares_raw": "1146188815"
+    },
+    {
+      "rank": 267,
+      "address": "GDETRURDEE53BKQ2CVFJOVLCCUQW6NGWRCIJ5F7SZQ3OUSYUAWZ5GWEX",
+      "address_type": "account",
+      "shares_raw": "1115012828"
+    },
+    {
+      "rank": 268,
+      "address": "GCBYMMOSIINFRGFEJKEUGNCUNAOUQYZ6DOQXA47P76UGCUQSXVNWWM3L",
+      "address_type": "account",
+      "shares_raw": "1113692860"
+    },
+    {
+      "rank": 269,
+      "address": "GC5Z4GX6IBUZXKUYOSWNZRNJTQJEIJZTAYG2DANBCGHR5FDO5RIQFHMG",
+      "address_type": "account",
+      "shares_raw": "1111824795"
+    },
+    {
+      "rank": 270,
+      "address": "GBMZFNU5SVBFSOETKTBZZT5URHWVCW6UQ6SC2SOYCGAQGVIZPHX3RI4U",
+      "address_type": "account",
+      "shares_raw": "1108215879"
+    },
+    {
+      "rank": 271,
+      "address": "GDP3CNT73Q64UIPEMI6WDXFDEA67DF5CSZ6Y55TCNCXZSNMO4WKTA5ET",
+      "address_type": "account",
+      "shares_raw": "1082384909"
+    },
+    {
+      "rank": 272,
+      "address": "GDGQU6OLYT7SO43OAKPTQWBDM5HJP3YTEX335R3GUHCX7F4DUJ322D7R",
+      "address_type": "account",
+      "shares_raw": "1074793205"
+    },
+    {
+      "rank": 273,
+      "address": "GBH45AEJD5P355MK27R3BAPTTJUN6MRDZEDCHJZ4MVJGI2KQFZMA5QYJ",
+      "address_type": "account",
+      "shares_raw": "1049300649"
+    },
+    {
+      "rank": 274,
+      "address": "GBLQLUATIATW47454PRIX6QHY6YFNKLX5XGJBPGVSUHRVQLOV3GNJIYO",
+      "address_type": "account",
+      "shares_raw": "1026995097"
+    },
+    {
+      "rank": 275,
+      "address": "GDBICJJRACMJ5XL3YK7WQBGDQG7RKNUA3DJJJQLTLKMD25C5WP2H3J2S",
+      "address_type": "account",
+      "shares_raw": "1025407894"
+    },
+    {
+      "rank": 276,
+      "address": "GAL2GBMU2OETKJPBXU4AULN37KROUCJ55PUI2GLRNZ3HMENWXJ56QFMP",
+      "address_type": "account",
+      "shares_raw": "1000000000"
+    },
+    {
+      "rank": 277,
+      "address": "GCTPZQS7WHYT45B36ZKNFMBI7X2I7GKXU4WCKZUJYHYS3FX7RHHA5HNF",
+      "address_type": "account",
+      "shares_raw": "974201313"
+    },
+    {
+      "rank": 278,
+      "address": "GCB2NJ22PJVDRQ4WNGYD2TC2LITRULHGLG5TG6NWBIPQO64JE7OS465W",
+      "address_type": "account",
+      "shares_raw": "936698319"
+    },
+    {
+      "rank": 279,
+      "address": "GBJ7ANOCGDS5QEZNWRL6VETZDYSUV3PZTI5Q7TBE6AVZLGBE3QWLETQO",
+      "address_type": "account",
+      "shares_raw": "930866915"
+    },
+    {
+      "rank": 280,
+      "address": "GAB7355NRRUAB5TGEAKIHS2RP7SZ32JJLF337MF24GFPPPSKEXABURYP",
+      "address_type": "account",
+      "shares_raw": "925778431"
+    },
+    {
+      "rank": 281,
+      "address": "GB5FU5TOXJ7PXERVYSNJM6YEVI5N3OJBIEPPV6VYOCUI32VAAHTEDMMQ",
+      "address_type": "account",
+      "shares_raw": "923829511"
+    },
+    {
+      "rank": 282,
+      "address": "GAB7SXP6ABTIUTGD54PKVGLAAPDO4A7TXMAGP3HPZVKCAYTSJNNAOEEI",
+      "address_type": "account",
+      "shares_raw": "918358452"
+    },
+    {
+      "rank": 283,
+      "address": "GCM5O5PPEWBKADRFG2SFHNWLC2E7Q2XOZZZD2M3OZLIKHE3EJ3AMA64Q",
+      "address_type": "account",
+      "shares_raw": "904091328"
+    },
+    {
+      "rank": 284,
+      "address": "GCTO4SIC4S2SZZC2R5LWCQDXBZBN45N2YWVHIR4IEPVOHLDQZDZHRPMF",
+      "address_type": "account",
+      "shares_raw": "887800939"
+    },
+    {
+      "rank": 285,
+      "address": "GBWHCMLO4L5MU2HBWLABOH6PPCYQEXEIA4N4IFTCPOGATPSSIMZZG4BD",
+      "address_type": "account",
+      "shares_raw": "885543787"
+    },
+    {
+      "rank": 286,
+      "address": "GAAOYJTUS2YJ3OZYV4EJE5ASX2LTLMYJOM7WZ7IRNNBFIPY5EHC4P5MC",
+      "address_type": "account",
+      "shares_raw": "809438382"
+    },
+    {
+      "rank": 287,
+      "address": "GA2CR3O7326VP54ALYRHNWWSOQXJYU24Q2BZEGUHJRSDHCCVUSEM24EJ",
+      "address_type": "account",
+      "shares_raw": "804817213"
+    },
+    {
+      "rank": 288,
+      "address": "GAEN2F3J3JTYNPUMEJWW7YHFP3O375NSJ6EXBSHTCBS5HXZAUCPPYIG2",
+      "address_type": "account",
+      "shares_raw": "796879432"
+    },
+    {
+      "rank": 289,
+      "address": "CA4DRXJSNICCAFVEN2LP3TO5FX7QL4ZYQ3YUTSCLXCUVUXLTQ4VPZBIS",
+      "address_type": "contract",
+      "shares_raw": "765833522"
+    },
+    {
+      "rank": 290,
+      "address": "GDTQD7CLYU3DI56V2PQRIUO3ZWCL5QKPGJGFHBIPYVABBMM2SD6CVXVX",
+      "address_type": "account",
+      "shares_raw": "741393938"
+    },
+    {
+      "rank": 291,
+      "address": "GDREVXS4I2M4RRNQDUMI5A5GAFTIEQFSB2Y34SNI6K3O6WA6HUXYVMW7",
+      "address_type": "account",
+      "shares_raw": "728559548"
+    },
+    {
+      "rank": 292,
+      "address": "GDUQZKRYOSQEY6CPZ4YB2JLNY5HG7HDKWPF2I2OWWWGVO3Z24PZJODYU",
+      "address_type": "account",
+      "shares_raw": "695699210"
+    },
+    {
+      "rank": 293,
+      "address": "GDNACI5NRTKGOURFFDJDCVWSUH4PBAIDYXNBFZFXKPTOHPGHCRNPH5TF",
+      "address_type": "account",
+      "shares_raw": "692547157"
+    },
+    {
+      "rank": 294,
+      "address": "GAB6HYBE6DZ2ZIDAXVQSJKUQJBEIAYHXTBLUTDQJLKI6S6WJWJ7TMGF5",
+      "address_type": "account",
+      "shares_raw": "665570798"
+    },
+    {
+      "rank": 295,
+      "address": "GC2MYUXTFAINLGN3OSBLMKXIU4NH5GVSFYOVHSZMMZHQSILM7GFND633",
+      "address_type": "account",
+      "shares_raw": "655087085"
+    },
+    {
+      "rank": 296,
+      "address": "GBIWJGAOSFC4KUPHXM573TKTWHMI7VW7D4GCHYZYH243Q6HVBV7ORBIT",
+      "address_type": "account",
+      "shares_raw": "644116792"
+    },
+    {
+      "rank": 297,
+      "address": "GCJ2VBYRO4BO3BHCGN7EMSTKBLQXMUTS67PFHUJBZOCCQGLOQN5XFKOG",
+      "address_type": "account",
+      "shares_raw": "640336727"
+    },
+    {
+      "rank": 298,
+      "address": "GCN6YFU6BHTXX3FQJRLRQSQEKIILFK5LYIWOKBRL5T3ZAUXKSSQTEWG4",
+      "address_type": "account",
+      "shares_raw": "620081808"
+    },
+    {
+      "rank": 299,
+      "address": "GAB7GE4TLBAMTKZLJVFCXMN5QMAPQERYJODI4TXUBA52MAV3DYJALBYH",
+      "address_type": "account",
+      "shares_raw": "590979779"
+    },
+    {
+      "rank": 300,
+      "address": "GB5RVWUKPWZJXFLHWVXOHZCVEK7SCKNGSJI22KBVMSPD2JXZB3PDPLMV",
+      "address_type": "account",
+      "shares_raw": "516388120"
+    },
+    {
+      "rank": 301,
+      "address": "GA2QOH2JFQJ3RLZGBPU2URAZ4RS4B2IX4SCZ47NBJGAKD6HQWHQDA4EK",
+      "address_type": "account",
+      "shares_raw": "509594466"
+    },
+    {
+      "rank": 302,
+      "address": "GDE2FP2TUF4CWIK7IT3LJOLLOHS47QAT4XJAXH6WCZG2GKWTSG4YBBQQ",
+      "address_type": "account",
+      "shares_raw": "503115472"
+    },
+    {
+      "rank": 303,
+      "address": "GAIL3QR4PFQBIGOA2WNTIXFM3N3G72F37UUV66YPKKCLMH3YETOSFHEF",
+      "address_type": "account",
+      "shares_raw": "491265798"
+    },
+    {
+      "rank": 304,
+      "address": "GDMY4247UFHZMP7SFQXZ5CBHOJMDVZQE3ENJM7JF7ZR4DQ2TWIPKZU3E",
+      "address_type": "account",
+      "shares_raw": "410877152"
+    },
+    {
+      "rank": 305,
+      "address": "GDVEAFWLJYQPNNMHQ27FNW5GYHJOSXUSFQDNZU62AGTE2Q5F4V5QSGNW",
+      "address_type": "account",
+      "shares_raw": "387139751"
+    },
+    {
+      "rank": 306,
+      "address": "GD77UUOP4FS2W45T5N6T6CSPXZ2TCJR4FZTAT4ONKXQSEB53RQNTAK7L",
+      "address_type": "account",
+      "shares_raw": "378426031"
+    },
+    {
+      "rank": 307,
+      "address": "GC2MO4TGDG5OVLVFTIKIXCYOYL6POXGX2WTFIZERE4NSJCKRI4LKFMTU",
+      "address_type": "account",
+      "shares_raw": "367830708"
+    },
+    {
+      "rank": 308,
+      "address": "GAMDHCU2ELAY6JHQEDNU4WIBOF276QJUT5UQJRFXGV4LMTYGDK762UNY",
+      "address_type": "account",
+      "shares_raw": "366868297"
+    },
+    {
+      "rank": 309,
+      "address": "GC6GXKD7GGEOO65F2D2DEUS7RZ4O6ZLCVIIRK2DOWXDHVX2DB6GGD3YT",
+      "address_type": "account",
+      "shares_raw": "366799865"
+    },
+    {
+      "rank": 310,
+      "address": "GBVKY7STOBL4QQUMHLNN7UYILRC56KI6KO6SLK56B4CT5EFDZRECF7N4",
+      "address_type": "account",
+      "shares_raw": "359979418"
+    },
+    {
+      "rank": 311,
+      "address": "GDAWX4KV5EQLP5W44HE5AA5QN5QRBJOVQIAI5OXOH5FW2ENT5PXN33DE",
+      "address_type": "account",
+      "shares_raw": "357176329"
+    },
+    {
+      "rank": 312,
+      "address": "GC5SD2MCVCWPB4AF26ZJIR367XOIVV3JIMY2EZPHKEJGEUEX5XSMXWZA",
+      "address_type": "account",
+      "shares_raw": "353765312"
+    },
+    {
+      "rank": 313,
+      "address": "GCAX4BW7CWKNVFDUSI2L4WWY6AUCCWCE54PRWGXGJ7VRLBS5X7MBMDDY",
+      "address_type": "account",
+      "shares_raw": "330354034"
+    },
+    {
+      "rank": 314,
+      "address": "GBNK7X6QDURCS2GX5QBXEU6HXPYGOYKQ6ZCKCMNP4ZQIKRS72LAZ73NG",
+      "address_type": "account",
+      "shares_raw": "306900640"
+    },
+    {
+      "rank": 315,
+      "address": "GBFZWIDB5KHOOTFAECPNWKTHMUBWFAGNZR5REAABFGINIMDYPAUL4J5A",
+      "address_type": "account",
+      "shares_raw": "306141018"
+    },
+    {
+      "rank": 316,
+      "address": "GBMAGI4SSIPO2NYCQHHJBSLZ52G3UDN6WKV5VZAJ35POA2NG3YDPHVPV",
+      "address_type": "account",
+      "shares_raw": "298610588"
+    },
+    {
+      "rank": 317,
+      "address": "GBAW37WLN2JC7H3GGHSQNPKHTISMI67QF3XZIEJZQDKCPJB6JZJ2TRXL",
+      "address_type": "account",
+      "shares_raw": "298591776"
+    },
+    {
+      "rank": 318,
+      "address": "GARMUNCNK5NCHAD64NV2VLJQ3GJN2TJFRJ6ZN7LKD4O2C5DSPCB577QL",
+      "address_type": "account",
+      "shares_raw": "291192857"
+    },
+    {
+      "rank": 319,
+      "address": "GAL3ZPH55E3YLEBZYVIMRGMA2ZUQHO3BD3UT47YKJHEE2KVIED24STHX",
+      "address_type": "account",
+      "shares_raw": "288537281"
+    },
+    {
+      "rank": 320,
+      "address": "GBLGNDADF3GTNTAKRESO5LKQDLPCOQ7OVU7DY26JAXYFWBXEYVKY2NFB",
+      "address_type": "account",
+      "shares_raw": "274659806"
+    },
+    {
+      "rank": 321,
+      "address": "GBKGOMGNT7RVOFBZVKAZA2WSDOWGCY3Q2D46B3PKYZP3PDFO72RSUQKV",
+      "address_type": "account",
+      "shares_raw": "257734014"
+    },
+    {
+      "rank": 322,
+      "address": "GCPN3LQOCEA6J7JV24E4FFL4BJTCWMZQQTABL2KWVJWCNEGONVWTUBAK",
+      "address_type": "account",
+      "shares_raw": "253982326"
+    },
+    {
+      "rank": 323,
+      "address": "GARC3K7FGW255GY5WG4AU2B7VFA46KC6TZTRGDZ4P23235SV5DHSTXEE",
+      "address_type": "account",
+      "shares_raw": "250077287"
+    },
+    {
+      "rank": 324,
+      "address": "GBHIPC7OBNOUK2PUDWRCYIGWGURRU6QKZL7VE2JXGHFIHVSGO3P2677E",
+      "address_type": "account",
+      "shares_raw": "230846193"
+    },
+    {
+      "rank": 325,
+      "address": "GBVNOTDHHV7IO7HLEYVYMU257QFHVXXCGN7GIDE55ZBP5C4TBOIXVCD3",
+      "address_type": "account",
+      "shares_raw": "220599891"
+    },
+    {
+      "rank": 326,
+      "address": "GC5GPYX65P76HSV2XZ5KCXSS5KTZWF6OP2UFLOIM3GVVQIWSBU6IIL6G",
+      "address_type": "account",
+      "shares_raw": "209059222"
+    },
+    {
+      "rank": 327,
+      "address": "CAYQOYGV7US2CTOCG54LEMG76OJIDMEI3HL6HOXWCKGEA7WHZRCVCW46",
+      "address_type": "contract",
+      "shares_raw": "206184113"
+    },
+    {
+      "rank": 328,
+      "address": "GDZ5HDZP5LHHTF7QNNIZV55SCVKRSZS6UXGBRISF4CY5QUX7FMQ3ABNU",
+      "address_type": "account",
+      "shares_raw": "193596504"
+    },
+    {
+      "rank": 329,
+      "address": "GCUH77U4SI4A7F3UYPVSYEW64XNOXZ7V7YKNKTNCXBCOJPTL6HTUU4R6",
+      "address_type": "account",
+      "shares_raw": "181552563"
+    },
+    {
+      "rank": 330,
+      "address": "GDG5V6LVXEMDITWFFYSSSUVLTEGIDHCAO6VL36JBD7ENKC7GQXKRBRBA",
+      "address_type": "account",
+      "shares_raw": "181429041"
+    },
+    {
+      "rank": 331,
+      "address": "GB7CDJLKB7EO76UBQN6BVGMLVKRIF3NKMP6AXITRI52RAMAKMOAKXIKR",
+      "address_type": "account",
+      "shares_raw": "164489186"
+    },
+    {
+      "rank": 332,
+      "address": "GAIRK3MP4IO6LZ4PIEKXAKYFGDI46ALSC5OL7AAURYSWCWKNTGOWHLHA",
+      "address_type": "account",
+      "shares_raw": "163132485"
+    },
+    {
+      "rank": 333,
+      "address": "GCMWO3XGISQJVGXACC4QN6I6G6MWAM4KV6G4NWCKOG3FO6ETMLSNQEXZ",
+      "address_type": "account",
+      "shares_raw": "162846016"
+    },
+    {
+      "rank": 334,
+      "address": "GCDCYPJO2JTE4SJMKUTKZD4YGBWDOMKGKMWAXN4WLRHFAU6KV4NIEK5R",
+      "address_type": "account",
+      "shares_raw": "162617501"
+    },
+    {
+      "rank": 335,
+      "address": "GAPNT32774YFGFMSKQG3XYO5GSPEG33TSRQUNR42QQ52R2MEWSBZJK5S",
+      "address_type": "account",
+      "shares_raw": "141075973"
+    },
+    {
+      "rank": 336,
+      "address": "GDOPYPHE2G7CSHXC4BQGMWQPHPS7KNGCKEQY2MJSWMFKGBXJ6I2A3OVP",
+      "address_type": "account",
+      "shares_raw": "139706805"
+    },
+    {
+      "rank": 337,
+      "address": "GD7NB2UZNV6CX5NHIONUMI65JFZBQO57QR7O44KY6G7QOMMQMMRRWVKY",
+      "address_type": "account",
+      "shares_raw": "132550588"
+    },
+    {
+      "rank": 338,
+      "address": "GACMBVFG56MWHDW7FRWA6MYIVKQ77SUT3C4J24MI5UBBKVU2RAD2DFE2",
+      "address_type": "account",
+      "shares_raw": "127922876"
+    },
+    {
+      "rank": 339,
+      "address": "GBQPDBTU6Z6COF3AYFJNH3PWGN2I6T2LT6BN2W362IBVICJCCACIFEJ6",
+      "address_type": "account",
+      "shares_raw": "127799874"
+    },
+    {
+      "rank": 340,
+      "address": "GA4XJAJ3P7NQTLYRMG2SOF7UPEVRNAVFRQ2PIXPGR7YG54MMS2RTELLW",
+      "address_type": "account",
+      "shares_raw": "106330543"
+    },
+    {
+      "rank": 341,
+      "address": "GCKEHPAZCAIERF775J6O4U3HUWIT2FVFODQECWIXEZQJ2QQX63AHTZ2Q",
+      "address_type": "account",
+      "shares_raw": "105464282"
+    },
+    {
+      "rank": 342,
+      "address": "GBZFLQIAXSHWIDBWPHOMAPLKBSFK35X67ME62A4IRYKATG32PMV7SAJE",
+      "address_type": "account",
+      "shares_raw": "100342334"
+    },
+    {
+      "rank": 343,
+      "address": "GAUNKDDDNBYWEXFGB5UOSRIDNEBON6ROZOCW6WFY7FOR3PJGGNQFO6PJ",
+      "address_type": "account",
+      "shares_raw": "94460345"
+    },
+    {
+      "rank": 344,
+      "address": "GDZZR6UBK5TWJ5AXFX74N442RLEAEERYUSP7JHMXAHUAMGEGZSC3ZAVT",
+      "address_type": "account",
+      "shares_raw": "85366975"
+    },
+    {
+      "rank": 345,
+      "address": "GDNK74PMBZ2KML2E3OILXBRANUATP33Z3EPLSZBUXP6MET7OVOBL34SB",
+      "address_type": "account",
+      "shares_raw": "84242895"
+    },
+    {
+      "rank": 346,
+      "address": "GBO3GNS272BFQIOB4FF3SWWOFXFG7AX63LO2XAVLACVDUQKV4WCINT5V",
+      "address_type": "account",
+      "shares_raw": "83508741"
+    },
+    {
+      "rank": 347,
+      "address": "GDXQE2Z6FEO2XSLAT4EDU5NWDZTEGETBIPYDJJ4CHH6KSY2H7732BZF2",
+      "address_type": "account",
+      "shares_raw": "82659915"
+    },
+    {
+      "rank": 348,
+      "address": "GC5GFG6TBKBCTREVD3IVOJINGU4XTOQLAHLC3WXKRGDTQKE523TA464L",
+      "address_type": "account",
+      "shares_raw": "80333477"
+    },
+    {
+      "rank": 349,
+      "address": "GCVEU5APZO3N4FR6GPDZDXDYZS74OVXDSPI42DQ2G35CF7MG5ZWTSCIO",
+      "address_type": "account",
+      "shares_raw": "75962274"
+    },
+    {
+      "rank": 350,
+      "address": "GDIQAR3SGCJZ5OF76B4AN5AJY7V2ZJJZC6OHSTTNQY77L3FTSKBTGU7Y",
+      "address_type": "account",
+      "shares_raw": "74696656"
+    },
+    {
+      "rank": 351,
+      "address": "GDZUYUDTAHZBE24RAOZOGQ52YHVPP6676USWSYC5ITFJ5WFGJQH3J3WP",
+      "address_type": "account",
+      "shares_raw": "67755436"
+    },
+    {
+      "rank": 352,
+      "address": "GCNLDOJWI2TV27SPVFJMUVMVOH5SUGEIYMFEQLGRCSTHHQQJS4XI67UM",
+      "address_type": "account",
+      "shares_raw": "67020471"
+    },
+    {
+      "rank": 353,
+      "address": "GD5KSHS7AGCE7QHDSCNX253N2UMNKEP5KFUDYUIY3FIZI67JM4DSJ2HD",
+      "address_type": "account",
+      "shares_raw": "64763946"
+    },
+    {
+      "rank": 354,
+      "address": "GDHUFCJ7ZRFNB2S6WUCKJXEREA54YVO7XN5AR655XYXUTY3QWMJMMULJ",
+      "address_type": "account",
+      "shares_raw": "64729503"
+    },
+    {
+      "rank": 355,
+      "address": "GDXLRWGGA6C6OYWUOD2US2AR7QBQKDHSQUKHICDII3DH2FDIOEXFERAQ",
+      "address_type": "account",
+      "shares_raw": "63823429"
+    },
+    {
+      "rank": 356,
+      "address": "GB4J33ZNH63VYRZUOAJCJIEV5LDEFOD2V3ZM62ZKK5IRCA3BBIDEREFH",
+      "address_type": "account",
+      "shares_raw": "52373894"
+    },
+    {
+      "rank": 357,
+      "address": "GAJO3OT3EOEHYNJM2R74UFO4NV4IPVFVTYCYEVNTUZOMTXON7A75YORE",
+      "address_type": "account",
+      "shares_raw": "50188923"
+    },
+    {
+      "rank": 358,
+      "address": "GDTIW2XS2T3UHGGVCBEEMJSQUB2IRGLBF6PO5T7A3NSF3WOMHAVD7FNM",
+      "address_type": "account",
+      "shares_raw": "50000000"
+    },
+    {
+      "rank": 359,
+      "address": "GCU7SJW42RVRSDZ63KM5KGDBXRLSL74KXVG6PS2VPJBTUYR6EY2CJHGQ",
+      "address_type": "account",
+      "shares_raw": "44103683"
+    },
+    {
+      "rank": 360,
+      "address": "GDSSLBC66CZI7DZLAUNYVCADBYYSKHJDE3APJCI4SRDM3TYS2LHQFNYF",
+      "address_type": "account",
+      "shares_raw": "39093268"
+    },
+    {
+      "rank": 361,
+      "address": "GDDT5F35W42ELATI4S3H6R4BATKSY3HFTLPN2WULTHZ3XUZIWSGU2J2G",
+      "address_type": "account",
+      "shares_raw": "38954518"
+    },
+    {
+      "rank": 362,
+      "address": "GAYKKYTEHCRRLXLYQXDPTLWG2UEPUNR6WVHJTUGTWZ7MNMJ3U35SFDXU",
+      "address_type": "account",
+      "shares_raw": "36527313"
+    },
+    {
+      "rank": 363,
+      "address": "GALQD6OACZMX3HVVWGMKPCA6ITVFVTXDANSKU67KSGWOYWXCAWWCCLVW",
+      "address_type": "account",
+      "shares_raw": "32974459"
+    },
+    {
+      "rank": 364,
+      "address": "GBO7FPUTO6GSNS6C5A7CK374XMK7JL2GTUXNRU4MNJ72LWBOIB6WGTW2",
+      "address_type": "account",
+      "shares_raw": "29620942"
+    },
+    {
+      "rank": 365,
+      "address": "GB3AVQH3J3YBBWQSSNGFUWHYB3SS5JNEMDV3SGOEEDSRGP6C2XSFHO4B",
+      "address_type": "account",
+      "shares_raw": "28424820"
+    },
+    {
+      "rank": 366,
+      "address": "GAZN4BIQPNPPS2PW2NKAWW6K37RLRV47BWTLJACRZXQJ4DVBA3IFQMRY",
+      "address_type": "account",
+      "shares_raw": "27827837"
+    },
+    {
+      "rank": 367,
+      "address": "GA2QPTLERXGGQOI23NVTWMZ6FDVXTCNXHBWAHSANZ6X2YMXFLZKPD5Y4",
+      "address_type": "account",
+      "shares_raw": "25648162"
+    },
+    {
+      "rank": 368,
+      "address": "GCHLFJVEUGN45I27NXWXOMV7B4ZXGPJMUUEUBA7O43IG6KEEDHAGPN4T",
+      "address_type": "account",
+      "shares_raw": "24121622"
+    },
+    {
+      "rank": 369,
+      "address": "GCL3CVQZFUW3TFVTWS7VYO5XXIAUCRF36KOCIHHL75IX4J3YREZCEUNY",
+      "address_type": "account",
+      "shares_raw": "23220677"
+    },
+    {
+      "rank": 370,
+      "address": "GBKC7PDKWKZ3ETQ2L76IF6HOWTI5ITFD2PEYHOYG3M4YHJ6PSW3N2CPT",
+      "address_type": "account",
+      "shares_raw": "18842663"
+    },
+    {
+      "rank": 371,
+      "address": "GDHVGOZF6WT7CDM5EREDZ7R5CBTQRFQMFSJPMAOWMANIVXXDF3ENNIMR",
+      "address_type": "account",
+      "shares_raw": "17859118"
+    },
+    {
+      "rank": 372,
+      "address": "GCLORRKHQDUHD6V7CBWLLMCHCSPHFMCKUXQGTIKYWLIOPJUKWUGU6Z3V",
+      "address_type": "account",
+      "shares_raw": "17228641"
+    },
+    {
+      "rank": 373,
+      "address": "GDWVSSISOKIMKCQKUBRY6QXGLMII2YKWFTZIH4HQRK6LMEOZUAYZGJW4",
+      "address_type": "account",
+      "shares_raw": "16838772"
+    },
+    {
+      "rank": 374,
+      "address": "GAETN3MSNJDPK62CJ6JVOUNOD63RJN3HWHVLZLJMQXN7RJEMZPJ3SZ6X",
+      "address_type": "account",
+      "shares_raw": "16715799"
+    },
+    {
+      "rank": 375,
+      "address": "GBPV6BQZXPXM2TNSS7QDASSDUU6PVJFCHCIE2E5L7H4EKKIBNAOIZF3H",
+      "address_type": "account",
+      "shares_raw": "15839971"
+    },
+    {
+      "rank": 376,
+      "address": "GDMTKGOWC3Y43P2EU75AULPOKCQGZEIGB6OR6YPHK7NTDHPHQ2I7HEKW",
+      "address_type": "account",
+      "shares_raw": "15630382"
+    },
+    {
+      "rank": 377,
+      "address": "GCJ45ZYIXVRXI6OYHOD2OX766CNCTC5QTLREXIHRV6KOGIDKL33FLZQF",
+      "address_type": "account",
+      "shares_raw": "15288721"
+    },
+    {
+      "rank": 378,
+      "address": "GAIEN22P6OOMJJQKHJKVMLHGJXSOCDZDUTMMABOWDDXU2X2Y5DCKZTXF",
+      "address_type": "account",
+      "shares_raw": "14630475"
+    },
+    {
+      "rank": 379,
+      "address": "GB4C6XKHXZLFBQKL7IVUJMPQZ4BVIJNYS4QCFWGAH2WFDORINDCFHR2U",
+      "address_type": "account",
+      "shares_raw": "13035199"
+    },
+    {
+      "rank": 380,
+      "address": "GBTYAFHGNZSTE4VBWZYAGB3SRGJEPTI5I4Y22KZ4JTVAN56LESB6JZOF",
+      "address_type": "account",
+      "shares_raw": "13032289"
+    },
+    {
+      "rank": 381,
+      "address": "GB7WJXIRR5MSEXVVZ265DJB4QJ45Q2QRTMIXJFXV7DN3IV5BY7XEQHTL",
+      "address_type": "account",
+      "shares_raw": "12678353"
+    },
+    {
+      "rank": 382,
+      "address": "GCLV4QX3OYGMUQSEFDJZ46KM5HB77VJXXVLRXSFVBYA6F6FFZBROH5PE",
+      "address_type": "account",
+      "shares_raw": "10479013"
+    },
+    {
+      "rank": 383,
+      "address": "GDTD2EX3Q5VMZWXPRAUFBKJYHNLAHP2L4DSEGLH7TJD4RVXYT6VIGXOG",
+      "address_type": "account",
+      "shares_raw": "10000000"
+    },
+    {
+      "rank": 384,
+      "address": "GAJ6T6AU55OB4BB5XQ4ZC7TUD2SLMDVZRD3LTNY4MN6WI53XERSUWXQJ",
+      "address_type": "account",
+      "shares_raw": "8791329"
+    },
+    {
+      "rank": 385,
+      "address": "GC5CQXTIRFSLTAXNYXOWTCUKQOCPSAAKJZPJYKDS4NP6PI3RHWRIGIPW",
+      "address_type": "account",
+      "shares_raw": "8509959"
+    },
+    {
+      "rank": 386,
+      "address": "GBYLTESD5FBXDQDCJ5IRQ4E5KXNFRZEROLI3WP6REHUVWSK75QW26KRU",
+      "address_type": "account",
+      "shares_raw": "8301402"
+    },
+    {
+      "rank": 387,
+      "address": "GDWLVITTYYSTFDGWY2LQH6SHQTEB4O3IRLCDAEE5CGFLUM4E5C3SLVDI",
+      "address_type": "account",
+      "shares_raw": "7842353"
+    },
+    {
+      "rank": 388,
+      "address": "GB35DW2RBB7Q5Y3T3O2MMHLW22P2CIWK3OBJACR7JEOFJCKTGJDV4CQI",
+      "address_type": "account",
+      "shares_raw": "7340478"
+    },
+    {
+      "rank": 389,
+      "address": "GB4E3WP7E7XCTXUZYQINRURM2JF4DWBMSOK5UECMWFUNLI3XSYMXQYP4",
+      "address_type": "account",
+      "shares_raw": "6451015"
+    },
+    {
+      "rank": 390,
+      "address": "GAMGCOLBE547IOABXNYIAE3ZJQBLXHYRF4Z6EM4LXBIEDF67X5YSABMK",
+      "address_type": "account",
+      "shares_raw": "5923668"
+    },
+    {
+      "rank": 391,
+      "address": "GB6Y24VSBEQUSOLJ6RAM4PCH2GXLM7MGZWUNNLC7ILRLYKQK3BPJTUTI",
+      "address_type": "account",
+      "shares_raw": "5100065"
+    },
+    {
+      "rank": 392,
+      "address": "GAPLXXBHMVBKUNOOOMR2OFHGSWNN5MYFJRMZOECOT6IKY5RV3UGWFVG7",
+      "address_type": "account",
+      "shares_raw": "4829814"
+    },
+    {
+      "rank": 393,
+      "address": "GASND6BBFGDGWDLP2DJCFDAKL7GHHZAYQ6PENFHSHMLEMFKAVLZCDQXJ",
+      "address_type": "account",
+      "shares_raw": "3475208"
+    },
+    {
+      "rank": 394,
+      "address": "GDQI7LOGDRQRM5OXEIEY7TDHUYEHGQ7RX3KOJU3FNUP6HBDHUGWA3I6R",
+      "address_type": "account",
+      "shares_raw": "3151157"
+    },
+    {
+      "rank": 395,
+      "address": "GBEKLFZMC3TEVLRYGYIRLAYWTXBCX43UXXII3JD33FPLQWHRGHEDK6IZ",
+      "address_type": "account",
+      "shares_raw": "2260038"
+    },
+    {
+      "rank": 396,
+      "address": "GAKIIH266BRQY7C2JFZH25HC46O7ULTZOEZNH2NBNWSTFSDZ6BWQQJE2",
+      "address_type": "account",
+      "shares_raw": "2205107"
+    },
+    {
+      "rank": 397,
+      "address": "GAWL2CH2JH5APO5GJZ5OH6SILW4XUFW7Z72FZDAAUOLK5QZTS363QDDC",
+      "address_type": "account",
+      "shares_raw": "1988986"
+    },
+    {
+      "rank": 398,
+      "address": "GDKRZEZ2DKIM4YQBGIY5KO4Z6F6GJH7C4HW2BQZURR2LZXWNEGGXKALI",
+      "address_type": "account",
+      "shares_raw": "1807891"
+    },
+    {
+      "rank": 399,
+      "address": "GDWCQZO3RUW5KI7AEWUKYFW36ZZQ2AOXUR7SO72CDJJKBBAEE44GS2PD",
+      "address_type": "account",
+      "shares_raw": "1720521"
+    },
+    {
+      "rank": 400,
+      "address": "GDA3KH2ACOLTR3PUNSFUGM446EY2CKWLZZOI453KCKYTUEKQTY5ETYN2",
+      "address_type": "account",
+      "shares_raw": "1704550"
+    },
+    {
+      "rank": 401,
+      "address": "GCBS6RORL7MM3WFOGVRSAP5TVVWTYMS2L5UMQWXPVED3HB6ZGHF7AUPM",
+      "address_type": "account",
+      "shares_raw": "1394907"
+    },
+    {
+      "rank": 402,
+      "address": "GCXAW4AMKEEKU6YFRY3OC7WYXJTG7HOWR6TEN3WRGTUGPIPYRM5NFNUD",
+      "address_type": "account",
+      "shares_raw": "1121037"
+    },
+    {
+      "rank": 403,
+      "address": "GB4DNA2POXXWS6ICI7PX7Z3MPKTIKXBLOK6OVQA7ANTF4EY6RAND6HHX",
+      "address_type": "account",
+      "shares_raw": "893581"
+    },
+    {
+      "rank": 404,
+      "address": "GDE2FMUG4YLSEBU2YXEQW7CSAYUWVPO6EI3JCTT4IKCHA2XZV6QJT253",
+      "address_type": "account",
+      "shares_raw": "817241"
+    },
+    {
+      "rank": 405,
+      "address": "GD6KB4YPGKONGKSPRVEOUDLSCIAD42XHCB4QWLR5AGNF2ET5T2OUZZQT",
+      "address_type": "account",
+      "shares_raw": "753868"
+    },
+    {
+      "rank": 406,
+      "address": "GCL5B4D6HXX7D2XEJTNSEFHN7RH7O5CBL3ZGJYJ4NJRFUSD5QF55DITS",
+      "address_type": "account",
+      "shares_raw": "672907"
+    },
+    {
+      "rank": 407,
+      "address": "GD52CPH2SKWSQ37Y6RUXMQMCJGQMSNB3CUYSI43NS6NAEGXIQQYLMDYJ",
+      "address_type": "account",
+      "shares_raw": "669326"
+    },
+    {
+      "rank": 408,
+      "address": "GDGDDMVM5Y7WS5RK5BEOTQPUQ2K73MXCOGSF4FKJEPWSDUT4YY3GEJNS",
+      "address_type": "account",
+      "shares_raw": "667570"
+    },
+    {
+      "rank": 409,
+      "address": "GD4EN5NB25YLXKTCUV7XPIPDL6RUQEC7L7T7JMB2QMGPFSKAHNMFWGC6",
+      "address_type": "account",
+      "shares_raw": "649197"
+    },
+    {
+      "rank": 410,
+      "address": "CCYUN6GE33GF5GB23XLAAY6OENPBHEMIPFNQLD7S5YYTAGJLJLZENX4E",
+      "address_type": "contract",
+      "shares_raw": "614555"
+    },
+    {
+      "rank": 411,
+      "address": "GA3GK6POT4ULRSLH3OHNHVOGVGFEUMAWHYEQDM6WNS5NAZ327OGL7II2",
+      "address_type": "account",
+      "shares_raw": "594469"
+    },
+    {
+      "rank": 412,
+      "address": "GCRJ56CVFFASF3L5QLPCKE4XNRGC7RE3U2HSDHAFRTZHAY2MQKWU2UQ6",
+      "address_type": "account",
+      "shares_raw": "496834"
+    },
+    {
+      "rank": 413,
+      "address": "GAGCFJNK7ETAKASG3WPPYEDHAKGUWA5NJSW7RHPX3RIJPZSPIN2XGLI3",
+      "address_type": "account",
+      "shares_raw": "369394"
+    },
+    {
+      "rank": 414,
+      "address": "GDYHVKFQ4FEE76XX2XZCJAS7Y5QTA7MJCQCX5TSPFWVV3L7R6GBCU7TH",
+      "address_type": "account",
+      "shares_raw": "355505"
+    },
+    {
+      "rank": 415,
+      "address": "GDUHSEICX6MRQWRQWW4QQX766FVWTUCOGTLZ5QAH6SL2IVX6NLEIHRKU",
+      "address_type": "account",
+      "shares_raw": "343425"
+    },
+    {
+      "rank": 416,
+      "address": "GAJRGT5XHEVATPA2NUQ5JVTBZES32O3LZ5LFLWANOOQI5ENRXIMNKQE4",
+      "address_type": "account",
+      "shares_raw": "341156"
+    },
+    {
+      "rank": 417,
+      "address": "GBSSGIYB7STQA53PNB4HTFRZJRGREEF47OB6UF44EPDUZNCAZMUCGTLK",
+      "address_type": "account",
+      "shares_raw": "271864"
+    },
+    {
+      "rank": 418,
+      "address": "GCXJ4V7UXFOUS3BQZVWK6HML5TFFJSMPNZQVBTH565BTBV4K24U4BG6N",
+      "address_type": "account",
+      "shares_raw": "196740"
+    },
+    {
+      "rank": 419,
+      "address": "GACTXQR2PHJ72GNDIYR4W3Z2X54LCW3E5QKGLW6PTILDYBOUTSN44LB3",
+      "address_type": "account",
+      "shares_raw": "171882"
+    },
+    {
+      "rank": 420,
+      "address": "GADRVVR23UCI6GROPWZ3H6K6QGLC7YH5PEYQ3FJHAUZGJMCASMUXQSXX",
+      "address_type": "account",
+      "shares_raw": "117992"
+    },
+    {
+      "rank": 421,
+      "address": "GBYG3RGKMZMHDNIDTHS6HL6OK73LMT6HTRAFKQV6EV2NFWNCLLWNEVQ2",
+      "address_type": "account",
+      "shares_raw": "106179"
+    },
+    {
+      "rank": 422,
+      "address": "GACAI36BCRAIFTXW7NTH7BQD3UQ7SLFCENNJGICPETTRE7VPOQ6GUWPM",
+      "address_type": "account",
+      "shares_raw": "84769"
+    },
+    {
+      "rank": 423,
+      "address": "GBQFUJA7AV254KFQF4JS4VIG4ZK4F74ODYULYA7IYZMLVAY7BAKUU5WS",
+      "address_type": "account",
+      "shares_raw": "79495"
+    },
+    {
+      "rank": 424,
+      "address": "GCPGXLK6JEATIMVHTSWC7FBDUG74A7ODI36WV46SMMBVPV35S4AHVVTG",
+      "address_type": "account",
+      "shares_raw": "72392"
+    },
+    {
+      "rank": 425,
+      "address": "GCZCKTFEJPCEVLFB3DKZTQVNIBFXL3X3BA4JNBE773TE5LTL3NCD3ICD",
+      "address_type": "account",
+      "shares_raw": "55355"
+    },
+    {
+      "rank": 426,
+      "address": "GCGWLP2YIOBV2RISNXBAXPD4E7QNQB2IOEHUFWICAQA2RLBTIKTUJXXD",
+      "address_type": "account",
+      "shares_raw": "32718"
+    },
+    {
+      "rank": 427,
+      "address": "GBNVSNJSZMERFCJ3QMYF5HVHW4A75IEH4LUAZE7QNXUADR2L7SL65WVA",
+      "address_type": "account",
+      "shares_raw": "32128"
+    },
+    {
+      "rank": 428,
+      "address": "GAEQDQALDK73AIXLXSHUOIPBO6SL5RZYBEVU4UCAYPWHTCTZKOU2EOQ5",
+      "address_type": "account",
+      "shares_raw": "26716"
+    },
+    {
+      "rank": 429,
+      "address": "GDMKNQWLH5H476ZFR46AZTL3YAQ3DW657ZAGV5N7QBPBX726YWFBOOTY",
+      "address_type": "account",
+      "shares_raw": "24092"
+    },
+    {
+      "rank": 430,
+      "address": "GCPZI7YUQ4WY4IAJDSOXG4XN37KDOZ35GLVF6NGUU7IIGWKHI7Y3HYUX",
+      "address_type": "account",
+      "shares_raw": "19974"
+    },
+    {
+      "rank": 431,
+      "address": "GCMZPA75DOJOHVJRHYJ6V2FINMAHERVDL2725IBNMNXMGQETPFLZHYAC",
+      "address_type": "account",
+      "shares_raw": "15691"
+    },
+    {
+      "rank": 432,
+      "address": "GDAKRH4QWTW5HB5JZI2XV4UJOHBRXKIW5UXORALVLMQ4L33JZ5K7LZNP",
+      "address_type": "account",
+      "shares_raw": "848"
+    },
+    {
+      "rank": 433,
+      "address": "CAQQR5SWBXKIGZKPBZDH3KM5GQ5GUTPKB7JAFCINLZBC5WXPJKRG3IM7",
+      "address_type": "contract",
+      "shares_raw": "772"
+    },
+    {
+      "rank": 434,
+      "address": "GCYI2FG76NF7SYMMYK6EVWCHKIQQ4JRLBRZ42FDJ7KPWVYBQHVGJV6VL",
+      "address_type": "account",
+      "shares_raw": "9"
+    }
+  ],
+  "excluded_zero_weight_holders": [
+    {
+      "rank": 435,
+      "address": "GBCXNIUTZENFMJXI7Y4CVOK3OARE5GHAZPSZ2O6CRZYXW6CTR6T2IQFM",
+      "address_type": "account",
+      "shares_raw": "0"
+    }
+  ]
+}
