@@ -17,6 +17,10 @@ This repository includes the pre-incident ownership snapshot, a deterministic ma
 
 This is a public signaling mechanism, not binding on-chain governance. Contract addresses in the snapshot remain eligible, but can vote only if their authorization design can satisfy Soroban `require_auth`.
 
+## Deployments
+
+- Stellar testnet: [`CBJNVTNSZL6HFCYHXY2ZFXFKRV5K2QBU3FSXBTFPNR6RUOB52OY24XW4`](https://lab.stellar.org/r/testnet/contract/CBJNVTNSZL6HFCYHXY2ZFXFKRV5K2QBU3FSXBTFPNR6RUOB52OY24XW4) — deployment details are recorded in [`deployments/testnet.json`](deployments/testnet.json).
+
 ## Canonical snapshot
 
 The exact source data is committed at [`snapshot/comet_cpal_flattened_ownership_before_41c898a1.csv`](snapshot/comet_cpal_flattened_ownership_before_41c898a1.csv).
