@@ -20,7 +20,7 @@ This is a public signaling mechanism, not binding on-chain governance. Contract 
 ## Deployments
 
 - Stellar testnet: [`CBJNVTNSZL6HFCYHXY2ZFXFKRV5K2QBU3FSXBTFPNR6RUOB52OY24XW4`](https://lab.stellar.org/r/testnet/contract/CBJNVTNSZL6HFCYHXY2ZFXFKRV5K2QBU3FSXBTFPNR6RUOB52OY24XW4) — deployment details are recorded in [`deployments/testnet.json`](deployments/testnet.json).
-- Stellar testnet, YieldBox Security Council emitter migration poll: [`CBZGH2OXR4UEBU64CL2NLW76G4VX4JKJ7R54ED7M3KOEWJQO653BEQHW`](https://lab.stellar.org/r/testnet/contract/CBZGH2OXR4UEBU64CL2NLW76G4VX4JKJ7R54ED7M3KOEWJQO653BEQHW) — deployment details are recorded in [`deployments/testnet-yieldbox-emitter-migration.json`](deployments/testnet-yieldbox-emitter-migration.json).
+- Stellar testnet, YieldBlox Security Council emitter migration poll: [`CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX`](https://lab.stellar.org/r/testnet/contract/CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX) — deployment details are recorded in [`deployments/testnet-yieldblox-emitter-migration.json`](deployments/testnet-yieldblox-emitter-migration.json).
 
 ## Canonical snapshot
 

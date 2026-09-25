@@ -1,11 +1,11 @@
 {
   "network": "Stellar testnet",
   "network_passphrase": "Test SDF Network ; September 2015",
-  "contract_id": "CBZGH2OXR4UEBU64CL2NLW76G4VX4JKJ7R54ED7M3KOEWJQO653BEQHW",
+  "contract_id": "CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX",
   "deployed_at": "2026-09-24",
   "source_commit": "d0a661a9c21d77e8eeab1d77b0b1ced9dfcf1466",
   "wasm_sha256": "0be9e151caa899128a2406a5198d60333132db295138a5329337eb1c33fc3b5f",
-  "proposal": "Should the YieldBox Security Council perform an emitter migration to V2.1 backstop?",
+  "proposal": "Should the YieldBlox Security Council perform an emitter migration to V2.1 backstop?",
   "options": ["Yes", "No"],
   "eligible_holder_count": 434,
   "total_eligible_shares_raw": "146100619813817",
@@ -13,6 +13,6 @@
   "snapshot_allocation_digest": "16ef4a50d5899fb5ecc18f72f38b2cb903d009f9bf116904c465c76b52fece06",
   "transactions": {
     "upload_wasm": "4aa02e5f397bd02e4d6330ffa7009f80418828d8be5a8698b070ad1b318d8b82",
-    "deploy": "01b8bed06a643c726a2492b2c90802ee85ab8f0d7827ae3a28797e8a21f74694"
+    "deploy": "d5aa020bf4f53ba489e0b73076d7e8d68440858c780f64df7dbd79ec6ed6aa58"
   }
 }
