@@ -10,6 +10,7 @@ This repository includes the pre-incident ownership snapshot, a deterministic ma
 - The proposal text, two or more option labels, and eligible allocations are fixed in the constructor.
 - Construction succeeds only when the ordered allocation list exactly matches the committed canonical snapshot digest, holder count, and total.
 - An eligible address authenticates one vote for one option.
+- A deployment can initialize previously cast votes without new voter authorization. Each imported address must be eligible and unique, and its weight is derived from the same immutable snapshot allocation.
 - The contract automatically uses that address's entire snapshot allocation. Partial voting and vote changes are not supported.
 - Votes and voter addresses are public.
 - Results report both the percentage of votes cast and the percentage of all eligible shares. Percentages are truncated to seven decimal places.
@@ -37,6 +38,15 @@ The exact source data is committed at [`snapshot/comet_cpal_flattened_ownership_
 
 One zero-weight CSV row is retained for provenance but excluded from constructor allocations. No positive allocation is redistributed or rounded. Run `make snapshot` to validate the CSV and regenerate [`snapshot/manifest.json`](snapshot/manifest.json).
 
+## Testnet vote migration
+
+The votes displayed by `blnd.trade/vote` were captured from both public testnet poll contracts and are committed with their source contract, capture ledger, cast order, selected option, snapshot weight, and aggregate results:
+
+- [`migrations/testnet-v21-adoption.json`](migrations/testnet-v21-adoption.json) — 7 votes representing `1,311,976.0626794` LP shares.
+- [`migrations/testnet-yieldblox-emitter-migration.json`](migrations/testnet-yieldblox-emitter-migration.json) — 6 votes representing `1,301,231.1601493` LP shares.
+
+Both captures were verified through testnet ledger `5,029,816`. Run `make verify-migrations` to prove every captured address and weight against the canonical ownership snapshot and recompute the recorded totals. The manifests are point-in-time captures; votes cast on the testnet contracts after that ledger require a new capture before production deployment.
+
 ## Contract interface
 
 The constructor accepts:
@@ -44,8 +54,17 @@ The constructor accepts:
 1. `proposal: String`
 2. `options: Vec<String>`
 3. `eligible_voters: Vec<(Address, i128)>`
+4. `initial_votes: Vec<(Address, u32)>`
 
 `eligible_voters` must contain the 434 positive allocations in the exact CSV order. The contract derives its allocation digest and rejects any omission, reordering, address change, or weight change. The source CSV SHA-256 and canonical allocation digest are compiled into the contract and returned by `get_config()`.
+
+`initial_votes` contains `(voter, option)` pairs in original cast order. Construction rejects an ineligible address, duplicate address, or invalid option. Imported votes initialize the same records, per-option totals, voter lists, and global totals as live votes, so an imported voter receives `AlreadyVoted` if it attempts to vote again. Use an empty vector for a new poll without prior votes.
+
+Generate the constructor value for either captured poll with:
+
+```sh
+jq -c '[.votes[] | [.voter, .option]]' migrations/testnet-v21-adoption.json
+```
 
 The primary methods are:
 
@@ -69,7 +88,7 @@ make test
 make build
 ```
 
-The optimized Wasm input is written to `target/wasm32v1-none/release/blend_vote_contract.wasm`. Before deployment, optimize it with Stellar CLI and supply all 434 `eligible_voters` from the manifest in order. The constructor independently rejects a non-canonical allocation list.
+The optimized Wasm input is written to `target/wasm32v1-none/release/blend_vote_contract.wasm`. Before deployment, optimize it with Stellar CLI and supply all 434 `eligible_voters` from the snapshot manifest in order. For a migrated poll, supply the corresponding migration manifest's votes as ordered `(voter, option)` tuples. The constructor requires the canonical allocation list and validates every initial vote against the resulting allocation map.
 
 ## License
 

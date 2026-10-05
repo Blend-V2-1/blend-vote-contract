@@ -7,10 +7,13 @@ __constructor(
     proposal: String,
     options: Vec<String>,
     eligible_voters: Vec<(Address, i128)>,
+    initial_votes: Vec<(Address, u32)>,
 )
 ```
 
 Option indexes are zero-based and follow constructor order. The ordered voter list must exactly match the canonical snapshot committed to this repository.
+
+`initial_votes` imports previously cast votes in their original order. It may be empty. Every imported address must be eligible and unique, and every option must be valid. Imported weights are always read from `eligible_voters`; the caller cannot supply or alter them. Imported voters are immediately subject to the same `AlreadyVoted` rule as voters who call `vote` after deployment.
 
 ## Methods
 

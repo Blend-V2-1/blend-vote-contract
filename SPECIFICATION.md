@@ -13,9 +13,11 @@ Construction succeeds only when:
 - there are exactly 434 unique eligible addresses in canonical CSV order;
 - every eligible allocation is a positive `i128`;
 - their sum is exactly `146100619813817`; and
-- the SHA-256 allocation digest matches `16ef4a50d5899fb5ecc18f72f38b2cb903d009f9bf116904c465c76b52fece06`.
+- the SHA-256 allocation digest matches `16ef4a50d5899fb5ecc18f72f38b2cb903d009f9bf116904c465c76b52fece06`;
+- every initial vote identifies an eligible address and a configured option; and
+- no address occurs more than once in the initial vote list.
 
-The digest is calculated over the UTF-8 domain `blend-vote-snapshot-v1`, followed by each positive CSV row's 56-byte ASCII address and signed i128 big-endian raw share count. The proposal, options, snapshot hashes, allocation map, eligible total, and eligible holder count are immutable after construction.
+The digest is calculated over the UTF-8 domain `blend-vote-snapshot-v1`, followed by each positive CSV row's 56-byte ASCII address and signed i128 big-endian raw share count. The proposal, options, snapshot hashes, allocation map, eligible total, and eligible holder count are immutable after construction. Each valid initial vote creates the same vote record and updates the same option and global aggregates as a live vote, but construction does not require fresh authorization from a voter whose prior vote is being migrated.
 
 ## Vote transition
 
@@ -27,6 +29,8 @@ For `vote(voter, option)` to succeed:
 4. `voter` must not already have a vote record.
 
 The transition atomically creates the vote record, adds the full immutable allocation to the option and global totals, increments voter counts, stores the address at the next index in the option's voter list, and publishes a `vote` event. Any failure rolls back the entire transition.
+
+Constructor-imported votes perform the same state transition in supplied order without publishing new vote events. Any invalid imported vote rolls back construction.
 
 ## Invariants
 

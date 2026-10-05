@@ -66,6 +66,62 @@ fn require_option(e: &Env, option: u32, count: u32) {
     }
 }
 
+fn record_vote(e: &Env, voter: Address, option: u32) -> VoteRecord {
+    storage::extend_instance(e);
+    let config = storage::get_config(e);
+    require_option(e, option, config.options.len());
+    voter.require_auth();
+
+    let allocations = storage::get_allocations(e);
+    let shares = allocations
+        .get(voter.clone())
+        .unwrap_or_else(|| panic_with_error!(e, VoteError::IneligibleVoter));
+    let mut votes = storage::get_votes(e);
+    if votes.contains_key(voter.clone()) {
+        panic_with_error!(e, VoteError::AlreadyVoted);
+    }
+
+    let record = VoteRecord { option, shares };
+    votes.set(voter.clone(), record.clone());
+
+    let mut option_shares = storage::get_option_shares(e);
+    let new_option_shares = option_shares
+        .get(option)
+        .unwrap_or_else(|| panic_with_error!(e, VoteError::InvalidOptionIndex))
+        .checked_add(shares)
+        .unwrap_or_else(|| panic_with_error!(e, VoteError::Overflow));
+    option_shares.set(option, new_option_shares);
+
+    let mut option_voter_counts = storage::get_option_voter_counts(e);
+    let new_option_voter_count = option_voter_counts
+        .get(option)
+        .unwrap_or_else(|| panic_with_error!(e, VoteError::InvalidOptionIndex))
+        .checked_add(1)
+        .unwrap_or_else(|| panic_with_error!(e, VoteError::Overflow));
+    option_voter_counts.set(option, new_option_voter_count);
+
+    let total_voted_shares = storage::get_total_voted_shares(e)
+        .checked_add(shares)
+        .filter(|total| *total <= config.total_eligible_shares)
+        .unwrap_or_else(|| panic_with_error!(e, VoteError::Overflow));
+    let total_voters = storage::get_total_voters(e)
+        .checked_add(1)
+        .filter(|total| *total <= config.eligible_holder_count)
+        .unwrap_or_else(|| panic_with_error!(e, VoteError::Overflow));
+
+    let mut option_voters = storage::get_option_voters(e, option);
+    option_voters.push_back(voter);
+
+    storage::set_votes(e, &votes);
+    storage::set_option_shares(e, &option_shares);
+    storage::set_option_voter_counts(e, &option_voter_counts);
+    storage::set_option_voters(e, option, &option_voters);
+    storage::set_total_voted_shares(e, total_voted_shares);
+    storage::set_total_voters(e, total_voters);
+
+    record
+}
+
 #[contractimpl]
 impl BlendVoteContract {
     pub fn __constructor(
@@ -73,6 +129,7 @@ impl BlendVoteContract {
         proposal: String,
         options: Vec<String>,
         eligible_voters: Vec<(Address, i128)>,
+        initial_votes: Vec<(Address, u32)>,
     ) {
         if proposal.is_empty() || proposal.len() > MAX_PROPOSAL_BYTES {
             panic_with_error!(&e, VoteError::InvalidProposal);
@@ -130,79 +187,74 @@ impl BlendVoteContract {
             total_eligible_shares,
             eligible_holder_count: allocations.len(),
         };
-        let mut option_shares = Vec::new(&e);
-        let mut option_voter_counts = Vec::new(&e);
+        let mut option_shares = Vec::<i128>::new(&e);
+        let mut option_voter_counts = Vec::<u32>::new(&e);
+        let mut option_voters = Map::<u32, Vec<Address>>::new(&e);
         for option_index in 0..config.options.len() {
             option_shares.push_back(0);
             option_voter_counts.push_back(0);
-            storage::set_option_voters(&e, option_index, &Vec::new(&e));
+            option_voters.set(option_index, Vec::new(&e));
+        }
+
+        let mut votes = Map::new(&e);
+        let mut total_voted_shares = 0_i128;
+        for (voter, option) in initial_votes.iter() {
+            require_option(&e, option, config.options.len());
+            let shares = allocations
+                .get(voter.clone())
+                .unwrap_or_else(|| panic_with_error!(&e, VoteError::IneligibleVoter));
+            if votes.contains_key(voter.clone()) {
+                panic_with_error!(&e, VoteError::AlreadyVoted);
+            }
+            votes.set(voter.clone(), VoteRecord { option, shares });
+
+            let shares_for_option = option_shares
+                .get(option)
+                .unwrap_or_else(|| panic_with_error!(&e, VoteError::InvalidOptionIndex))
+                .checked_add(shares)
+                .unwrap_or_else(|| panic_with_error!(&e, VoteError::Overflow));
+            option_shares.set(option, shares_for_option);
+            let voters_for_option = option_voter_counts
+                .get(option)
+                .unwrap_or_else(|| panic_with_error!(&e, VoteError::InvalidOptionIndex))
+                .checked_add(1)
+                .unwrap_or_else(|| panic_with_error!(&e, VoteError::Overflow));
+            option_voter_counts.set(option, voters_for_option);
+            total_voted_shares = total_voted_shares
+                .checked_add(shares)
+                .filter(|total| *total <= config.total_eligible_shares)
+                .unwrap_or_else(|| panic_with_error!(&e, VoteError::Overflow));
+
+            let mut voters = option_voters
+                .get(option)
+                .unwrap_or_else(|| panic_with_error!(&e, VoteError::InvalidOptionIndex));
+            voters.push_back(voter);
+            option_voters.set(option, voters);
         }
 
         storage::set_config(&e, &config);
         storage::set_allocations(&e, &allocations);
-        storage::set_votes(&e, &Map::new(&e));
+        storage::set_votes(&e, &votes);
         storage::set_option_shares(&e, &option_shares);
         storage::set_option_voter_counts(&e, &option_voter_counts);
-        storage::set_total_voted_shares(&e, 0);
-        storage::set_total_voters(&e, 0);
+        storage::set_total_voted_shares(&e, total_voted_shares);
+        storage::set_total_voters(&e, initial_votes.len());
+        for option in 0..config.options.len() {
+            storage::set_option_voters(
+                &e,
+                option,
+                &option_voters
+                    .get(option)
+                    .unwrap_or_else(|| panic_with_error!(&e, VoteError::InvalidOptionIndex)),
+            );
+        }
         storage::extend_instance(&e);
     }
 
     /// Casts all of `voter`'s immutable snapshot shares for one option.
     pub fn vote(e: Env, voter: Address, option: u32) -> VoteRecord {
-        storage::extend_instance(&e);
-        let config = storage::get_config(&e);
-        require_option(&e, option, config.options.len());
-        voter.require_auth();
-
-        let allocations = storage::get_allocations(&e);
-        let shares = allocations
-            .get(voter.clone())
-            .unwrap_or_else(|| panic_with_error!(&e, VoteError::IneligibleVoter));
-        let mut votes = storage::get_votes(&e);
-        if votes.contains_key(voter.clone()) {
-            panic_with_error!(&e, VoteError::AlreadyVoted);
-        }
-
-        let record = VoteRecord { option, shares };
-        votes.set(voter.clone(), record.clone());
-
-        let mut option_shares = storage::get_option_shares(&e);
-        let new_option_shares = option_shares
-            .get(option)
-            .unwrap_or_else(|| panic_with_error!(&e, VoteError::InvalidOptionIndex))
-            .checked_add(shares)
-            .unwrap_or_else(|| panic_with_error!(&e, VoteError::Overflow));
-        option_shares.set(option, new_option_shares);
-
-        let mut option_voter_counts = storage::get_option_voter_counts(&e);
-        let new_option_voter_count = option_voter_counts
-            .get(option)
-            .unwrap_or_else(|| panic_with_error!(&e, VoteError::InvalidOptionIndex))
-            .checked_add(1)
-            .unwrap_or_else(|| panic_with_error!(&e, VoteError::Overflow));
-        option_voter_counts.set(option, new_option_voter_count);
-
-        let total_voted_shares = storage::get_total_voted_shares(&e)
-            .checked_add(shares)
-            .filter(|total| *total <= config.total_eligible_shares)
-            .unwrap_or_else(|| panic_with_error!(&e, VoteError::Overflow));
-        let total_voters = storage::get_total_voters(&e)
-            .checked_add(1)
-            .filter(|total| *total <= config.eligible_holder_count)
-            .unwrap_or_else(|| panic_with_error!(&e, VoteError::Overflow));
-
-        let mut option_voters = storage::get_option_voters(&e, option);
-        option_voters.push_back(voter.clone());
-
-        storage::set_votes(&e, &votes);
-        storage::set_option_shares(&e, &option_shares);
-        storage::set_option_voter_counts(&e, &option_voter_counts);
-        storage::set_option_voters(&e, option, &option_voters);
-        storage::set_total_voted_shares(&e, total_voted_shares);
-        storage::set_total_voters(&e, total_voters);
-
-        events::vote(&e, voter, option, shares);
+        let record = record_vote(&e, voter.clone(), option);
+        events::vote(&e, voter, option, record.shares);
         record
     }
 
@@ -359,6 +411,7 @@ mod tests {
                     String::from_str(&e, "Which upgrade path should Blend follow?"),
                     vec![&e, String::from_str(&e, "V2.1"), String::from_str(&e, "V3")],
                     allocations,
+                    Vec::<(Address, u32)>::new(&e),
                 ),
             );
             Self {
@@ -434,6 +487,103 @@ mod tests {
     }
 
     #[test]
+    fn constructor_imports_votes_without_auth_and_blocks_a_second_vote() {
+        let e = Env::default();
+        let allocations = canonical_allocations(&e);
+        let (alice, alice_shares) = allocations.get(0).unwrap();
+        let (bob, bob_shares) = allocations.get(1).unwrap();
+        let contract = e.register(
+            BlendVoteContract,
+            (
+                String::from_str(&e, "Migrated poll"),
+                vec![&e, String::from_str(&e, "Yes"), String::from_str(&e, "No")],
+                allocations,
+                vec![&e, (alice.clone(), 0_u32), (bob.clone(), 1_u32)],
+            ),
+        );
+        let client = BlendVoteContractClient::new(&e, &contract);
+
+        let results = client.get_results();
+        assert_eq!(results.total_voters, 2);
+        assert_eq!(results.total_voted_shares, alice_shares + bob_shares);
+        assert_eq!(results.options.get(0).unwrap().shares, alice_shares);
+        assert_eq!(results.options.get(1).unwrap().shares, bob_shares);
+        assert_eq!(client.get_vote(&alice).unwrap().option, 0);
+        assert_eq!(client.get_vote(&bob).unwrap().option, 1);
+        assert_eq!(client.get_voters(&0, &0, &100), vec![&e, alice.clone()]);
+        assert_eq!(client.get_voters(&1, &0, &100), vec![&e, bob]);
+
+        e.mock_all_auths();
+        assert!(client.try_vote(&alice, &1).is_err());
+    }
+
+    #[test]
+    fn constructor_rejects_invalid_initial_votes() {
+        let duplicate_env = Env::default();
+        let duplicate_allocations = canonical_allocations(&duplicate_env);
+        let (duplicate_voter, _) = duplicate_allocations.get(0).unwrap();
+        let duplicate = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
+            duplicate_env.register(
+                BlendVoteContract,
+                (
+                    String::from_str(&duplicate_env, "Proposal"),
+                    vec![
+                        &duplicate_env,
+                        String::from_str(&duplicate_env, "Yes"),
+                        String::from_str(&duplicate_env, "No"),
+                    ],
+                    duplicate_allocations,
+                    vec![
+                        &duplicate_env,
+                        (duplicate_voter.clone(), 0_u32),
+                        (duplicate_voter, 1_u32),
+                    ],
+                ),
+            );
+        }));
+        assert!(duplicate.is_err());
+
+        let ineligible_env = Env::default();
+        let outsider = Address::generate(&ineligible_env);
+        let ineligible = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
+            ineligible_env.register(
+                BlendVoteContract,
+                (
+                    String::from_str(&ineligible_env, "Proposal"),
+                    vec![
+                        &ineligible_env,
+                        String::from_str(&ineligible_env, "Yes"),
+                        String::from_str(&ineligible_env, "No"),
+                    ],
+                    canonical_allocations(&ineligible_env),
+                    vec![&ineligible_env, (outsider, 0_u32)],
+                ),
+            );
+        }));
+        assert!(ineligible.is_err());
+
+        let option_env = Env::default();
+        let option_allocations = canonical_allocations(&option_env);
+        let (voter, _) = option_allocations.get(0).unwrap();
+        let invalid_option = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
+            option_env.register(
+                BlendVoteContract,
+                (
+                    String::from_str(&option_env, "Proposal"),
+                    vec![
+                        &option_env,
+                        String::from_str(&option_env, "Yes"),
+                        String::from_str(&option_env, "No"),
+                    ],
+                    option_allocations,
+                    vec![&option_env, (voter, 2_u32)],
+                ),
+            );
+        }));
+        assert!(invalid_option.is_err());
+    }
+
+    #[test]
     fn rejects_ineligible_voters_and_invalid_options() {
         let fixture = Fixture::create(true);
         let client = fixture.client();
@@ -483,6 +633,7 @@ mod tests {
                     String::from_str(&e, "Proposal"),
                     vec![&e, String::from_str(&e, "A"), String::from_str(&e, "B")],
                     duplicate_allocations,
+                    Vec::<(Address, u32)>::new(&e),
                 ),
             );
         }));
@@ -495,6 +646,7 @@ mod tests {
                     String::from_str(&e, "Proposal"),
                     vec![&e, String::from_str(&e, "A"), String::from_str(&e, "A")],
                     canonical_allocations(&e),
+                    Vec::<(Address, u32)>::new(&e),
                 ),
             );
         }));
@@ -510,6 +662,7 @@ mod tests {
                 String::from_str(&e, "Canonical snapshot construction test"),
                 vec![&e, String::from_str(&e, "Yes"), String::from_str(&e, "No")],
                 canonical_allocations(&e),
+                Vec::<(Address, u32)>::new(&e),
             ),
         );
         let config = BlendVoteContractClient::new(&e, &contract).get_config();
@@ -544,6 +697,7 @@ mod tests {
                     String::from_str(&e, "Proposal"),
                     vec![&e, String::from_str(&e, "A"), String::from_str(&e, "B")],
                     allocations,
+                    Vec::<(Address, u32)>::new(&e),
                 ),
             );
         }));
