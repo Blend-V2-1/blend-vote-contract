@@ -20,6 +20,8 @@ This is a public signaling mechanism, not binding on-chain governance. Contract 
 
 ## Deployments
 
+- Stellar mainnet: [`CC625LXACLPIIOFAY6PYWFLAXBWKTQANVO7H646HZ2UWRWRHPOARQ5JW`](https://lab.stellar.org/r/mainnet/contract/CC625LXACLPIIOFAY6PYWFLAXBWKTQANVO7H646HZ2UWRWRHPOARQ5JW) — initialized with the preserved V2.1 adoption votes; deployment details are recorded in [`deployments/mainnet.json`](deployments/mainnet.json).
+- Stellar mainnet, YieldBlox Security Council emitter migration poll: [`CCF2BPOAHFYPGCMAMGGI3OC6TOXSC5EMCS3R2N44P36H5WGVK4NWVP2B`](https://lab.stellar.org/r/mainnet/contract/CCF2BPOAHFYPGCMAMGGI3OC6TOXSC5EMCS3R2N44P36H5WGVK4NWVP2B) — initialized with the preserved emitter-migration votes; deployment details are recorded in [`deployments/mainnet-yieldblox-emitter-migration.json`](deployments/mainnet-yieldblox-emitter-migration.json).
 - Stellar testnet: [`CDYNFIK2GSAI2WRPQPDLD5LSTWJWILNSFGBZIMPB3AAWI5E4TDL5N2XJ`](https://lab.stellar.org/r/testnet/contract/CDYNFIK2GSAI2WRPQPDLD5LSTWJWILNSFGBZIMPB3AAWI5E4TDL5N2XJ) — deployment details are recorded in [`deployments/testnet.json`](deployments/testnet.json).
 - Stellar testnet, YieldBlox Security Council emitter migration poll: [`CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX`](https://lab.stellar.org/r/testnet/contract/CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX) — deployment details are recorded in [`deployments/testnet-yieldblox-emitter-migration.json`](deployments/testnet-yieldblox-emitter-migration.json).
 
