@@ -1,10 +1,10 @@
 {
   "network": "Stellar mainnet",
   "network_passphrase": "Public Global Stellar Network ; September 2015",
-  "contract_id": "CCF2BPOAHFYPGCMAMGGI3OC6TOXSC5EMCS3R2N44P36H5WGVK4NWVP2B",
-  "deployed_at": "2026-10-05T04:45:27Z",
+  "contract_id": "CDENWJWD3O2OICPWKUG7WNYLBKKX6BC5KA7NAF3KDFNK3R7E5EMPLG75",
+  "deployed_at": "2026-10-06T22:13:12Z",
   "deployer": "GDEA2WMOWYQ3T56A2PZH5QYYEQBAORW2AUUJYX4FFD5GDPESAICTFTAL",
-  "deployment_salt": "30762f326649129dd23998ea077a19820c2134b9143e9d98bc950699dc21c0ab",
+  "deployment_salt": "c9d63bf1e0170351da3769c849f09c0b90a1ac52073b1368b437060a498d093a",
   "source_commit": "3d12f76f9221117470d649058f91026d231fa698",
   "wasm_sha256": "c491e646f2402d8d8a1586eac825d45a89f6faaea76608cb54f64d4289d830b0",
   "proposal": "Should the YieldBlox Security Council perform an emitter migration to V2.1 backstop?",
@@ -14,10 +14,12 @@
   "snapshot_sha256": "30fbbb6c62c8812a94cfb02f1c9d528235a28dcddfb45fa7f5535e39fd9a4cd3",
   "snapshot_allocation_digest": "16ef4a50d5899fb5ecc18f72f38b2cb903d009f9bf116904c465c76b52fece06",
   "initial_votes": {
-    "source_manifest": "migrations/testnet-yieldblox-emitter-migration.json",
     "source_contract_id": "CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX",
-    "total_voters": 6,
-    "total_voted_shares_raw": "13012311601493"
+    "captured_through_ledger": 5060182,
+    "ordered_votes_sha256": "633ccef942b63485cdd1158680b13080e74d01d805c9109d38819dff0cbf8f45",
+    "ordered_votes_encoding": "UTF-8 compact JSON array of [address,option] pairs without a trailing newline",
+    "total_voters": 10,
+    "total_voted_shares_raw": "22905132794885"
   },
   "transactions": {
     "upload_wasm": {
@@ -25,8 +27,8 @@
       "ledger": 64777906
     },
     "deploy": {
-      "hash": "57a187a8a9101e6c5d7621cee4358cc2efc507b66f291c1b2c001d2d0a584cbc",
-      "ledger": 64777949
+      "hash": "7456e2f2b9789c504faacf988dc91efc17c3e38a5d3725e018b3587af09ce34c",
+      "ledger": 64807802
     }
   }
 }

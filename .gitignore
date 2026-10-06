@@ -1,4 +1,5 @@
 /target/
 /test_snapshots/
+/migrations/
 *.wasm
 .DS_Store

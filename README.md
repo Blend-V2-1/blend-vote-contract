@@ -20,8 +20,8 @@ This is a public signaling mechanism, not binding on-chain governance. Contract 
 
 ## Deployments
 
-- Stellar mainnet: [`CC625LXACLPIIOFAY6PYWFLAXBWKTQANVO7H646HZ2UWRWRHPOARQ5JW`](https://lab.stellar.org/r/mainnet/contract/CC625LXACLPIIOFAY6PYWFLAXBWKTQANVO7H646HZ2UWRWRHPOARQ5JW) — initialized with the preserved V2.1 adoption votes; deployment details are recorded in [`deployments/mainnet.json`](deployments/mainnet.json).
-- Stellar mainnet, YieldBlox Security Council emitter migration poll: [`CCF2BPOAHFYPGCMAMGGI3OC6TOXSC5EMCS3R2N44P36H5WGVK4NWVP2B`](https://lab.stellar.org/r/mainnet/contract/CCF2BPOAHFYPGCMAMGGI3OC6TOXSC5EMCS3R2N44P36H5WGVK4NWVP2B) — initialized with the preserved emitter-migration votes; deployment details are recorded in [`deployments/mainnet-yieldblox-emitter-migration.json`](deployments/mainnet-yieldblox-emitter-migration.json).
+- Stellar mainnet: [`CAKGN5UT4H2YDSOPS6IIBRFBWS4GCIL2KJLHRYZT65MZ22OH74Q4HF43`](https://lab.stellar.org/r/mainnet/contract/CAKGN5UT4H2YDSOPS6IIBRFBWS4GCIL2KJLHRYZT65MZ22OH74Q4HF43) — initialized with the preserved V2.1 adoption votes; deployment details are recorded in [`deployments/mainnet.json`](deployments/mainnet.json).
+- Stellar mainnet, YieldBlox Security Council emitter migration poll: [`CDENWJWD3O2OICPWKUG7WNYLBKKX6BC5KA7NAF3KDFNK3R7E5EMPLG75`](https://lab.stellar.org/r/mainnet/contract/CDENWJWD3O2OICPWKUG7WNYLBKKX6BC5KA7NAF3KDFNK3R7E5EMPLG75) — initialized with the preserved emitter-migration votes; deployment details are recorded in [`deployments/mainnet-yieldblox-emitter-migration.json`](deployments/mainnet-yieldblox-emitter-migration.json).
 - Stellar testnet: [`CDYNFIK2GSAI2WRPQPDLD5LSTWJWILNSFGBZIMPB3AAWI5E4TDL5N2XJ`](https://lab.stellar.org/r/testnet/contract/CDYNFIK2GSAI2WRPQPDLD5LSTWJWILNSFGBZIMPB3AAWI5E4TDL5N2XJ) — deployment details are recorded in [`deployments/testnet.json`](deployments/testnet.json).
 - Stellar testnet, YieldBlox Security Council emitter migration poll: [`CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX`](https://lab.stellar.org/r/testnet/contract/CCE4NO4AIZ4FVNWZQDFYVGTTLJ3D2ZXFMUILTJF6L22E3TXOWLSLHNNX) — deployment details are recorded in [`deployments/testnet-yieldblox-emitter-migration.json`](deployments/testnet-yieldblox-emitter-migration.json).
 
@@ -40,14 +40,9 @@ The exact source data is committed at [`snapshot/comet_cpal_flattened_ownership_
 
 One zero-weight CSV row is retained for provenance but excluded from constructor allocations. No positive allocation is redistributed or rounded. Run `make snapshot` to validate the CSV and regenerate [`snapshot/manifest.json`](snapshot/manifest.json).
 
-## Testnet vote migration
+## Imported votes
 
-The votes displayed by `blnd.trade/vote` were captured from both public testnet poll contracts and are committed with their source contract, capture ledger, cast order, selected option, snapshot weight, and aggregate results:
-
-- [`migrations/testnet-v21-adoption.json`](migrations/testnet-v21-adoption.json) — 7 votes representing `1,311,976.0626794` LP shares.
-- [`migrations/testnet-yieldblox-emitter-migration.json`](migrations/testnet-yieldblox-emitter-migration.json) — 6 votes representing `1,301,231.1601493` LP shares.
-
-Both captures were verified through testnet ledger `5,029,816`. Run `make verify-migrations` to prove every captured address and weight against the canonical ownership snapshot and recompute the recorded totals. The manifests are point-in-time captures; votes cast on the testnet contracts after that ledger require a new capture before production deployment.
+The mainnet polls were initialized with votes captured from the public testnet contracts through ledger `5,060,182`. The current source tree does not retain voter-level migration data. The deployment records retain the source contract, aggregate totals, and a SHA-256 commitment to the ordered `(voter, option)` constructor input. Imported votes and voter addresses remain publicly inspectable through the deployed contracts.
 
 ## Contract interface
 
@@ -61,12 +56,6 @@ The constructor accepts:
 `eligible_voters` must contain the 434 positive allocations in the exact CSV order. The contract derives its allocation digest and rejects any omission, reordering, address change, or weight change. The source CSV SHA-256 and canonical allocation digest are compiled into the contract and returned by `get_config()`.
 
 `initial_votes` contains `(voter, option)` pairs in original cast order. Construction rejects an ineligible address, duplicate address, or invalid option. Imported votes initialize the same records, per-option totals, voter lists, and global totals as live votes, so an imported voter receives `AlreadyVoted` if it attempts to vote again. Use an empty vector for a new poll without prior votes.
-
-Generate the constructor value for either captured poll with:
-
-```sh
-jq -c '[.votes[] | [.voter, .option]]' migrations/testnet-v21-adoption.json
-```
 
 The primary methods are:
 
@@ -90,7 +79,7 @@ make test
 make build
 ```
 
-The optimized Wasm input is written to `target/wasm32v1-none/release/blend_vote_contract.wasm`. Before deployment, optimize it with Stellar CLI and supply all 434 `eligible_voters` from the snapshot manifest in order. For a migrated poll, supply the corresponding migration manifest's votes as ordered `(voter, option)` tuples. The constructor requires the canonical allocation list and validates every initial vote against the resulting allocation map.
+The optimized Wasm input is written to `target/wasm32v1-none/release/blend_vote_contract.wasm`. Before deployment, optimize it with Stellar CLI and supply all 434 `eligible_voters` from the snapshot manifest in order. For a migrated poll, supply the intended votes as ordered `(voter, option)` tuples without committing the voter-level input. The constructor requires the canonical allocation list and validates every initial vote against the resulting allocation map.
 
 ## License
 

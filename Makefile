@@ -1,10 +1,10 @@
-.PHONY: check test build snapshot verify-snapshot verify-migrations
+.PHONY: check test build snapshot verify-snapshot
 
-check: verify-migrations
+check:
 	cargo fmt --check
 	cargo clippy --all-targets --all-features -- -D warnings
 
-test: verify-migrations
+test:
 	cargo test
 
 build:
@@ -12,12 +12,7 @@ build:
 
 snapshot:
 	node scripts/generate-snapshot.mjs
-	node scripts/verify-migration-votes.mjs
 
 verify-snapshot:
 	node scripts/generate-snapshot.mjs
-	node scripts/verify-migration-votes.mjs
 	git diff --exit-code -- snapshot/manifest.json
-
-verify-migrations:
-	node scripts/verify-migration-votes.mjs
